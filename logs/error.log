@@ -1,0 +1,10 @@
+[ERROR] [Thread-1] 05-08 23:28:07,699 [SmartQQClient] - 
+[ERROR] [Thread-1] 05-08 23:28:49,957 [SmartQQClient] - 
+[ERROR] [Thread-1] 05-08 23:28:56,352 [SmartQQClient] - 
+[ERROR] [Thread-1] 05-08 23:30:40,024 [SmartQQClient] - 
+[ERROR] [Thread-1] 05-08 23:35:57,344 [SmartQQClient] - 
+[ERROR] [Thread-1] 05-08 23:38:04,777 [SmartQQClient] - 
+[ERROR] [Thread-1] 05-08 23:39:36,521 [SmartQQClient] - java.lang.NullPointerException
+[ERROR] [Thread-1] 05-08 23:39:36,912 [SmartQQClient] - java.lang.NullPointerException
+[ERROR] [Thread-1] 05-08 23:40:26,310 [SmartQQClient] - java.lang.NullPointerException
+[ERROR] [Thread-1] 05-08 23:47:33,240 [SmartQQClient] - java.lang.NullPointerException

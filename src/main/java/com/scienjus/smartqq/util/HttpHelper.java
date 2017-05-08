@@ -1,12 +1,8 @@
-package com.scienjus.smartqq.Util;
-
-import com.alibaba.fastjson.JSONObject;
+package com.scienjus.smartqq.util;
 
 import java.io.*;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
-import java.net.URLConnection;
 
 /**
  * Created by admin on 2017/5/6 0006.
@@ -23,6 +19,7 @@ public class HttpHelper {
      * @return 所代表远程资源的响应结果
      */
     public static String sendPost(String path, String param) {
+        System.out.println(param);
         OutputStreamWriter out = null;
         BufferedReader in = null;
         String result = "";

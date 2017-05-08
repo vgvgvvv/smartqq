@@ -66,23 +66,21 @@ public class SmartQQClient implements Closeable {
         login();
         if (callback != null) {
             this.pollStarted = true;
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    while (true) {
-                        if (!pollStarted) {
-                            return;
+            new Thread(() -> {
+                while (true) {
+                    if (!pollStarted) {
+                        return;
+                    }
+
+                    try {
+                        pollMessage(callback);
+                    } catch (RequestException e) {
+                        //忽略SocketTimeoutException
+                        if (!(e.getCause() instanceof SocketTimeoutException)) {
+                            LOGGER.error(e);
                         }
-                        try {
-                            pollMessage(callback);
-                        } catch (RequestException e) {
-                            //忽略SocketTimeoutException
-                            if (!(e.getCause() instanceof SocketTimeoutException)) {
-                                LOGGER.error(e.getMessage());
-                            }
-                        } catch (Exception e) {
-                            LOGGER.error(e.getMessage());
-                        }
+                    } catch (Exception e) {
+                        LOGGER.error(e);
                     }
                 }
             }).start();
