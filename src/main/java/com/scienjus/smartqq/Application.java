@@ -46,10 +46,10 @@ public class Application {
     }
 
     public static void ResponseGroup(SmartQQClient client, GroupMessage message){
-        if(message.getContent().startsWith("爱酱")){
+        if(message.getContent().contains("爱酱")){
             JSONObject obj = new JSONObject();
             obj.put("key", "52d6ce0aaa40481097ae3fc1205587c4");
-            obj.put("info", message.getContent().substring(2));
+            obj.put("info", message.getContent());
             obj.put("userid", message.getGroupId());
             String post = null;
             try {
