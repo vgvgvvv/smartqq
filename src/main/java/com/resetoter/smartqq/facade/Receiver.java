@@ -3,7 +3,6 @@ package com.resetoter.smartqq.facade;
 import com.resetoter.smartqq.callback.MessageCallback;
 import com.resetoter.smartqq.model.*;
 import com.resetoter.smartqq.client.SmartQQClient;
-import com.scienjus.smartqq.model.*;
 
 import java.text.SimpleDateFormat;
 import java.util.*;
