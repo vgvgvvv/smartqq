@@ -1,60 +1,13 @@
-[INFO] [main] 05-08 23:24:08,843 [MessageCallbackFacade] - 初始化回调器TurningCallback
-[INFO] [main] 05-08 23:25:49,602 [MessageCallbackFacade] - 初始化回调器TurningCallback
-[INFO] [main] 05-08 23:26:49,772 [MessageCallbackFacade] - 初始化回调器com.scienjus.smartqq.turning.TurningCallback
-[INFO] [main] 05-08 23:26:51,035 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
-[INFO] [main] 05-08 23:27:16,120 [SmartQQClient] - 正在登录，请稍后
-[INFO] [main] 05-08 23:27:17,018 [SmartQQClient] - 巧克力，欢迎！
-[INFO] [Thread-1] 05-08 23:28:04,984 [MessageCallbackFacade] - onMessage：你好
-[ERROR] [Thread-1] 05-08 23:28:07,699 [SmartQQClient] - 
-[INFO] [Thread-1] 05-08 23:28:47,712 [MessageCallbackFacade] - onMessage：11
-[ERROR] [Thread-1] 05-08 23:28:49,957 [SmartQQClient] - 
-[INFO] [Thread-1] 05-08 23:28:54,483 [MessageCallbackFacade] - onMessage：asd
-[ERROR] [Thread-1] 05-08 23:28:56,352 [SmartQQClient] - 
-[INFO] [main] 05-08 23:29:22,984 [MessageCallbackFacade] - 初始化回调器com.scienjus.smartqq.turning.TurningCallback
-[INFO] [main] 05-08 23:29:23,713 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
-[INFO] [main] 05-08 23:29:35,707 [SmartQQClient] - 正在登录，请稍后
-[INFO] [main] 05-08 23:29:36,404 [SmartQQClient] - 巧克力，欢迎！
-[INFO] [Thread-1] 05-08 23:29:52,795 [MessageCallbackFacade] - onMessage：asd 
-[ERROR] [Thread-1] 05-08 23:30:40,024 [SmartQQClient] - 
-[INFO] [main] 05-08 23:35:36,930 [MessageCallbackFacade] - 初始化回调器com.scienjus.smartqq.turning.TurningCallback
-[INFO] [main] 05-08 23:35:37,771 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
-[INFO] [main] 05-08 23:35:45,313 [SmartQQClient] - 正在登录，请稍后
-[INFO] [main] 05-08 23:35:45,989 [SmartQQClient] - 巧克力，欢迎！
-[INFO] [Thread-1] 05-08 23:35:57,033 [MessageCallbackFacade] - onMessage：asd
-[INFO] [Thread-1] 05-08 23:35:57,344 [TurningCommon] - 我不会说英语的啦，你还是说中文吧。
-[ERROR] [Thread-1] 05-08 23:35:57,344 [SmartQQClient] - 
-[INFO] [Thread-1] 05-08 23:36:46,080 [MessageCallbackFacade] - onMessage：asd
-[INFO] [Thread-1] 05-08 23:36:46,349 [TurningCommon] - 我不会说英语的啦，你还是说中文吧。
-[ERROR] [Thread-1] 05-08 23:38:04,777 [SmartQQClient] - 
-[INFO] [main] 05-08 23:38:25,089 [MessageCallbackFacade] - 初始化回调器com.scienjus.smartqq.turning.TurningCallback
-[INFO] [main] 05-08 23:38:25,890 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
-[INFO] [main] 05-08 23:38:37,673 [SmartQQClient] - 正在登录，请稍后
-[INFO] [main] 05-08 23:38:38,434 [SmartQQClient] - 巧克力，欢迎！
-[INFO] [Thread-1] 05-08 23:38:44,690 [MessageCallbackFacade] - onMessage：asd
-[INFO] [Thread-1] 05-08 23:38:45,059 [TurningCommon] - 我不会说英语的啦，你还是说中文吧。
-[INFO] [main] 05-08 23:38:52,201 [MessageCallbackFacade] - 初始化回调器com.scienjus.smartqq.turning.TurningCallback
-[INFO] [main] 05-08 23:38:53,012 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
-[ERROR] [Thread-1] 05-08 23:39:36,521 [SmartQQClient] - java.lang.NullPointerException
-[INFO] [Thread-1] 05-08 23:39:36,641 [MessageCallbackFacade] - onMessage：asd
-[INFO] [Thread-1] 05-08 23:39:36,911 [TurningCommon] - 我不会说英语的啦，你还是说中文吧。
-[ERROR] [Thread-1] 05-08 23:39:36,912 [SmartQQClient] - java.lang.NullPointerException
-[INFO] [Thread-1] 05-08 23:40:26,043 [MessageCallbackFacade] - onMessage：asd
-[INFO] [Thread-1] 05-08 23:40:26,309 [TurningCommon] - 哎呀，你好像个复读机呀
-[ERROR] [Thread-1] 05-08 23:40:26,310 [SmartQQClient] - java.lang.NullPointerException
-[INFO] [main] 05-08 23:43:12,001 [MessageCallbackFacade] - 初始化回调器com.scienjus.smartqq.turning.TurningCallback
-[INFO] [main] 05-08 23:43:12,801 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
-[INFO] [main] 05-08 23:43:25,632 [SmartQQClient] - 正在登录，请稍后
-[INFO] [main] 05-08 23:43:26,404 [SmartQQClient] - 巧克力，欢迎！
-[INFO] [Thread-1] 05-08 23:43:32,956 [MessageCallbackFacade] - onMessage：aa
-[INFO] [Thread-1] 05-08 23:43:33,272 [TurningCommon] - 我不会说英语的啦，你还是说中文吧。
-[INFO] [main] 05-08 23:43:57,487 [MessageCallbackFacade] - 初始化回调器com.scienjus.smartqq.turning.TurningCallback
-[INFO] [main] 05-08 23:43:58,285 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
-[INFO] [main] 05-08 23:44:15,566 [SmartQQClient] - 正在登录，请稍后
-[INFO] [main] 05-08 23:44:16,255 [SmartQQClient] - 巧克力，欢迎！
-[INFO] [main] 05-08 23:47:10,001 [MessageCallbackFacade] - 初始化回调器com.scienjus.smartqq.turning.TurningCallback
-[INFO] [main] 05-08 23:47:10,799 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
-[INFO] [main] 05-08 23:47:19,418 [SmartQQClient] - 正在登录，请稍后
-[INFO] [main] 05-08 23:47:20,127 [SmartQQClient] - 巧克力，欢迎！
-[INFO] [Thread-1] 05-08 23:47:26,178 [MessageCallbackFacade] - onMessage：asd
-[INFO] [Thread-1] 05-08 23:47:26,518 [TurningCommon] - 我不会说英语的啦，你还是说中文吧。
-[ERROR] [Thread-1] 05-08 23:47:33,240 [SmartQQClient] - java.lang.NullPointerException
+[INFO] [main] 05-09 16:20:08,368 [MessageCallbackFacade] - 初始化回调器com.scienjus.smartqq.turning.TurningCallback
+[INFO] [main] 05-09 16:20:13,762 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
+[INFO] [main] 05-09 16:21:18,161 [MessageCallbackFacade] - 初始化回调器com.scienjus.smartqq.turning.TurningCallback
+[INFO] [main] 05-09 16:21:38,676 [MessageCallbackFacade] - 初始化回调器com.scienjus.smartqq.turning.TurningCallback
+[INFO] [main] 05-09 16:21:59,639 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
+[INFO] [main] 05-09 16:24:31,192 [MessageCallbackFacade] - 初始化回调器com.scienjus.smartqq.turning.TurningCallback
+[INFO] [main] 05-09 16:24:45,889 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
+[INFO] [main] 05-09 16:24:59,802 [SmartQQClient] - 正在登录，请稍后
+[INFO] [main] 05-09 16:25:01,867 [SmartQQClient] - 巧克力，欢迎！
+[INFO] [Thread-1] 05-09 16:25:12,321 [MessageCallbackFacade] - onMessage：阿萨德
+[INFO] [Thread-1] 05-09 16:25:13,035 [TurningCommon] - 阿道夫的撒阿萨德啦
+[INFO] [main] 05-09 16:25:17,732 [MessageCallbackFacade] - 初始化回调器com.scienjus.smartqq.turning.TurningCallback
+[INFO] [main] 05-09 16:25:18,761 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码

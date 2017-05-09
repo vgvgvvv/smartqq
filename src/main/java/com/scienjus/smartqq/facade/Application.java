@@ -1,10 +1,7 @@
 package com.scienjus.smartqq.facade;
 
-import com.scienjus.smartqq.callback.MessageCallback;
 import com.scienjus.smartqq.client.SmartQQClient;
 import com.scienjus.smartqq.constant.ConfigConst;
-import com.scienjus.smartqq.model.*;
-import com.scienjus.smartqq.turning.TurningCommon;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
@@ -24,7 +21,7 @@ public class Application {
         //初始化Log4
         PropertyConfigurator.configure(Application.class.getResourceAsStream(ConfigConst.LOG4J));
         //初始化facade
-        MessageCallbackFacade facade = MessageCallbackFacade.create(client, ConfigConst.MESSAGECALLBACK_FACADE);
+        MessageCallbackFacade facade = MessageCallbackFacade.create(ConfigConst.MESSAGECALLBACK_FACADE);
 
         //初始化客户端
         client = new SmartQQClient(facade);

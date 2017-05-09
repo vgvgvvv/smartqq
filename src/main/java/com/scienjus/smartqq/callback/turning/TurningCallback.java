@@ -1,7 +1,6 @@
-package com.scienjus.smartqq.turning;
+package com.scienjus.smartqq.callback.turning;
 
 import com.scienjus.smartqq.callback.MessageCallback;
-import com.scienjus.smartqq.client.SmartQQClient;
 import com.scienjus.smartqq.facade.Facade;
 import com.scienjus.smartqq.model.DiscussMessage;
 import com.scienjus.smartqq.model.GroupMessage;

@@ -1,4 +1,4 @@
-package com.scienjus.smartqq.turning;
+package com.scienjus.smartqq.callback.turning;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;

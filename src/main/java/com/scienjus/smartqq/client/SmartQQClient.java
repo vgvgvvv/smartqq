@@ -71,7 +71,6 @@ public class SmartQQClient implements Closeable {
                     if (!pollStarted) {
                         return;
                     }
-
                     try {
                         pollMessage(callback);
                     } catch (RequestException e) {
