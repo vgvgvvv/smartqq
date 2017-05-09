@@ -29,7 +29,7 @@
             <configuration>
               <transformers>
                 <transformer>
-                  <mainClass>com.scienjus.smartqq.facade.Application</mainClass>
+                  <mainClass>com.resetoter.smartqq.facade.Application</mainClass>
                 </transformer>
               </transformers>
             </configuration>
