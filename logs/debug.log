@@ -5161,3 +5161,13 @@ Caused by: java.lang.NullPointerException: Cannot invoke method getCode() on nul
 [DEBUG] [main] 05-11 04:16:04,130 [SmartQQClient] - 开始获取二维码
 [INFO] [main] 05-11 04:16:04,353 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
 [DEBUG] [main] 05-11 04:16:04,354 [SmartQQClient] - 等待扫描二维码
+[INFO] [main] 05-11 04:36:04,215 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-11 04:36:04,223 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
+[DEBUG] [main] 05-11 04:36:04,602 [SmartQQClient] - 开始获取二维码
+[INFO] [main] 05-11 04:36:04,832 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
+[DEBUG] [main] 05-11 04:36:04,832 [SmartQQClient] - 等待扫描二维码
+[INFO] [main] 05-11 04:38:51,337 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-11 04:38:51,344 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
+[DEBUG] [main] 05-11 04:38:51,685 [SmartQQClient] - 开始获取二维码
+[INFO] [main] 05-11 04:38:51,897 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
+[DEBUG] [main] 05-11 04:38:51,897 [SmartQQClient] - 等待扫描二维码
