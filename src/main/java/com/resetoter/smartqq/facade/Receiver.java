@@ -3,6 +3,8 @@ package com.resetoter.smartqq.facade;
 import com.resetoter.smartqq.callback.MessageCallback;
 import com.resetoter.smartqq.model.*;
 import com.resetoter.smartqq.client.SmartQQClient;
+import org.apache.log4j.Logger;
+import org.springframework.stereotype.Component;
 
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -14,69 +16,42 @@ import java.util.*;
  * @author Dilant
  * @date 2017/3/19
  */
-
 public class Receiver {
 
-    private static List<Friend> friendList = new ArrayList<>();                 //好友列表
-    private static List<Group> groupList = new ArrayList<>();                   //群列表
-    private static List<Discuss> discussList = new ArrayList<>();               //讨论组列表
-    private static Map<Long, Friend> friendFromID = new HashMap<>();            //好友id到好友映射
-    private static Map<Long, Group> groupFromID = new HashMap<>();              //群id到群映射
-    private static Map<Long, GroupInfo> groupInfoFromID = new HashMap<>();      //群id到群详情映射
-    private static Map<Long, Discuss> discussFromID = new HashMap<>();          //讨论组id到讨论组映射
-    private static Map<Long, DiscussInfo> discussInfoFromID = new HashMap<>();  //讨论组id到讨论组详情映射
+    static Logger logger = Logger.getLogger(Receiver.class);
 
-    private static boolean working;
-    /**
-     * SmartQQ客户端
-     */
-    private static SmartQQClient client = new SmartQQClient(new MessageCallback() {
+    private List<Friend> friendList = new ArrayList<>();                 //好友列表
+    private List<Group> groupList = new ArrayList<>();                   //群列表
+    private List<Discuss> discussList = new ArrayList<>();               //讨论组列表
+    private Map<Long, Friend> friendFromID = new HashMap<>();            //好友id到好友映射
+    private Map<Long, Group> groupFromID = new HashMap<>();              //群id到群映射
+    private Map<Long, GroupInfo> groupInfoFromID = new HashMap<>();      //群id到群详情映射
+    private Map<Long, Discuss> discussFromID = new HashMap<>();          //讨论组id到讨论组映射
+    private Map<Long, DiscussInfo> discussInfoFromID = new HashMap<>();  //讨论组id到讨论组详情映射
 
-        @Override
-        public void onMessage(Message msg) {
-            if (!working) {
-                return;
-            }
-            try {
-                System.out.println("[" + getTime() + "] [私聊] " + getFriendNick(msg) + "：" + msg.getContent());
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
+    private boolean working;
+    private SmartQQClient client;
+    private Date lastMapTime = null;
 
-        @Override
-        public void onGroupMessage(GroupMessage msg) {
-            if (!working) {
-                return;
-            }
-            try {
-                System.out.println("[" + getTime() + "] [" + getGroupName(msg) + "] " + getGroupUserNick(msg) + "：" + msg.getContent());
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-
-        @Override
-        public void onDiscussMessage(DiscussMessage msg) {
-            if (!working) {
-                return;
-            }
-            try {
-                System.out.println("[" + getTime() + "] [" + getDiscussName(msg) + "] " + getDiscussUserNick(msg) + "：" + msg.getContent());
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-
-        }
+    public Receiver(SmartQQClient client){
+        this.client = client;
     }
-    );
+
+    /**
+     * 是否正在工作
+     * @return
+     */
+    public boolean isWorking(){
+        return working;
+    }
+
 
     /**
      * 获取本地系统时间
      *
      * @return 本地系统时间
      */
-    private static String getTime() {
+    public String getTime() {
         SimpleDateFormat time = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         return time.format(new Date());
     }
@@ -87,7 +62,7 @@ public class Receiver {
      * @param id 被查询的群id
      * @return 该群详情
      */
-    private static GroupInfo getGroupInfoFromID(Long id) {
+    public GroupInfo getGroupInfoFromID(Long id) {
         if (!groupInfoFromID.containsKey(id)) {
             groupInfoFromID.put(id, client.getGroupInfo(groupFromID.get(id).getCode()));
         }
@@ -100,7 +75,7 @@ public class Receiver {
      * @param id 被查询的讨论组id
      * @return 该讨论组详情
      */
-    private static DiscussInfo getDiscussInfoFromID(Long id) {
+    public DiscussInfo getDiscussInfoFromID(Long id) {
         if (!discussInfoFromID.containsKey(id)) {
             discussInfoFromID.put(id, client.getDiscussInfo(discussFromID.get(id).getId()));
         }
@@ -113,7 +88,7 @@ public class Receiver {
      * @param msg 被查询的群消息
      * @return 该消息所在群名称
      */
-    private static String getGroupName(GroupMessage msg) {
+    public String getGroupName(GroupMessage msg) {
         return getGroup(msg).getName();
     }
 
@@ -123,7 +98,7 @@ public class Receiver {
      * @param msg 被查询的讨论组消息
      * @return 该消息所在讨论组名称
      */
-    private static String getDiscussName(DiscussMessage msg) {
+    public String getDiscussName(DiscussMessage msg) {
         return getDiscuss(msg).getName();
     }
 
@@ -133,7 +108,7 @@ public class Receiver {
      * @param msg 被查询的群消息
      * @return 该消息所在群
      */
-    private static Group getGroup(GroupMessage msg) {
+    public Group getGroup(GroupMessage msg) {
         return groupFromID.get(msg.getGroupId());
     }
 
@@ -143,7 +118,7 @@ public class Receiver {
      * @param msg 被查询的讨论组消息
      * @return 该消息所在讨论组
      */
-    private static Discuss getDiscuss(DiscussMessage msg) {
+    private Discuss getDiscuss(DiscussMessage msg) {
         return discussFromID.get(msg.getDiscussId());
     }
 
@@ -153,7 +128,7 @@ public class Receiver {
      * @param msg 被查询的私聊消息
      * @return 该消息发送者
      */
-    private static String getFriendNick(Message msg) {
+    public String getFriendNick(Message msg) {
         Friend user = friendFromID.get(msg.getUserId());
         if (user.getMarkname() == null || user.getMarkname().equals("")) {
             return user.getNickname(); //若发送者无备注则返回其昵称
@@ -169,7 +144,7 @@ public class Receiver {
      * @param msg 被查询的群消息
      * @return 该消息发送者昵称
      */
-    private static String getGroupUserNick(GroupMessage msg) {
+    public String getGroupUserNick(GroupMessage msg) {
         for (GroupUser user : getGroupInfoFromID(msg.getGroupId()).getUsers()) {
             if (user.getUin() == msg.getUserId()) {
                 if (user.getCard() == null || user.getCard().equals("")) {
@@ -189,7 +164,7 @@ public class Receiver {
      * @param msg 被查询的讨论组消息
      * @return 该消息发送者昵称
      */
-    private static String getDiscussUserNick(DiscussMessage msg) {
+    public String getDiscussUserNick(DiscussMessage msg) {
         for (DiscussUser user : getDiscussInfoFromID(msg.getDiscussId()).getUsers()) {
             if (user.getUin() == msg.getUserId()) {
                 return user.getNick(); //返回发送者昵称
@@ -199,23 +174,35 @@ public class Receiver {
         //TODO: 也有可能是新加讨论组的用户
     }
 
-    public static void main(String[] args) {
-        working = false;                                    //映射建立完毕前暂停工作以避免NullPointerException
-        friendList = client.getFriendList();                //获取好友列表
-        groupList = client.getGroupList();                  //获取群列表
-        discussList = client.getDiscussList();              //获取讨论组列表
-        for (Friend friend : friendList) {                  //建立好友id到好友映射
-            friendFromID.put(friend.getUserId(), friend);
+    public void mapping(){
+        try{
+            if(lastMapTime != null && (new Date().getTime() - lastMapTime.getTime())/1000/60 < 5)
+                return;
+
+            working = true;                                    //映射建立完毕前暂停工作以避免NullPointerException
+            friendList = client.getFriendList();                //获取好友列表
+            groupList = client.getGroupList();                  //获取群列表
+            discussList = client.getDiscussList();              //获取讨论组列表
+            for (Friend friend : friendList) {                  //建立好友id到好友映射
+                friendFromID.put(friend.getUserId(), friend);
+            }
+            for (Group group : groupList) {                     //建立群id到群映射
+                groupFromID.put(group.getId(), group);
+            }
+            for (Discuss discuss : discussList) {               //建立讨论组id到讨论组映射
+                discussFromID.put(discuss.getId(), discuss);
+            }
+            working = false;                                     //映射建立完毕后恢复工作
+            lastMapTime = new Date();
+            //为防止请求过多导致服务器启动自我保护
+            //群id到群详情映射 和 讨论组id到讨论组详情映射 将在第一次请求时创建
+            //TODO: 可考虑在出现第一条讨论组消息时再建立相关映射，以防Api错误返回
+            logger.info("映射完成");
+        }catch (Exception e){
+            logger.error(e.getMessage(), e);
+            working = false;
         }
-        for (Group group : groupList) {                     //建立群id到群映射
-            groupFromID.put(group.getId(), group);
-        }
-        for (Discuss discuss : discussList) {               //建立讨论组id到讨论组映射
-            discussFromID.put(discuss.getId(), discuss);
-        }
-        working = true;                                     //映射建立完毕后恢复工作
-        //为防止请求过多导致服务器启动自我保护
-        //群id到群详情映射 和 讨论组id到讨论组详情映射 将在第一次请求时创建
-        //TODO: 可考虑在出现第一条讨论组消息时再建立相关映射，以防Api错误返回
+
     }
+
 }

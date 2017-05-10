@@ -39,25 +39,49 @@ class MessageCallbackFacade implements MessageCallback {
 
     @Override
     void onMessage(Message message) {
-        logger.info("onMessage：" + message.getContent());
-        callbackList.forEach({
-            it.onMessage(message);
-        });
+        try{
+            if(Facade.receiver.working)
+                return;
+            Facade.receiver.mapping()
+
+            logger.info("onMessage：" + message.getContent());
+            callbackList.forEach({
+                it.onMessage(message);
+            });
+        }catch (Exception e){
+            logger.error(e.message, e);
+        }
+
     }
 
     @Override
     void onGroupMessage(GroupMessage message) {
-        logger.info("onGroupMessage：" + message.getContent());
-        callbackList.forEach({
-            it.onGroupMessage(message);
-        });
+        try {
+            if(Facade.receiver.working)
+                return;
+            Facade.receiver.mapping()
+            logger.info("onGroupMessage：" + message.getContent());
+            callbackList.forEach({
+                it.onGroupMessage(message);
+            });
+        }catch (Exception e){
+            logger.error(e.message, e);
+        }
     }
 
     @Override
     void onDiscussMessage(DiscussMessage message) {
-        logger.info("onDiscussMessage：" + message.getContent());
-        callbackList.forEach({
-            it.onDiscussMessage(message);
-        });
+        try {
+            if(Facade.receiver.working)
+                return;
+            Facade.receiver.mapping()
+            logger.info("onDiscussMessage：" + message.getContent());
+            callbackList.forEach({
+                it.onDiscussMessage(message);
+            });
+        }catch (Exception e){
+            logger.error(e.message, e);
+        }
+
     }
 }

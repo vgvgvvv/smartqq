@@ -1,5 +1,7 @@
 package com.resetoter.smartqq.spring
 
+import com.resetoter.smartqq.spring.bean.SmartQQConfig
+import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.support.ClassPathXmlApplicationContext
 
 /**
@@ -9,7 +11,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext
 class ApplicationContextHolder {
 
     @Delegate
-    final ClassPathXmlApplicationContext context =
-            new ClassPathXmlApplicationContext("classpath:spring/ApplicationContext.xml");
+    final AnnotationConfigApplicationContext context =
+            new AnnotationConfigApplicationContext(SmartQQConfig.class);
 
 }

@@ -1,0 +1,2 @@
+[ERROR] [Thread-1] 05-10 23:43:11,905 [SmartQQClient] - net.dongliu.requests.exception.RequestException: 请求失败，Api返回码[6]
+[ERROR] [Thread-1] 05-10 23:46:42,142 [SmartQQClient] - net.dongliu.requests.exception.RequestException: 请求失败，Api返回码[6]

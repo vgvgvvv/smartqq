@@ -3,6 +3,7 @@ package com.resetoter.smartqq.facade
 import com.resetoter.smartqq.client.SmartQQClient
 import com.resetoter.smartqq.constant.ConfigConst
 import com.resetoter.smartqq.manager.ExtensionManager
+import com.resetoter.smartqq.spring.ApplicationContextHolder
 import org.apache.log4j.Logger
 import org.apache.log4j.PropertyConfigurator
 
@@ -12,25 +13,19 @@ import org.apache.log4j.PropertyConfigurator
 class Facade {
 
 
-    static Logger logger = Logger.getLogger(Application.class);
+    static Logger logger = Logger.getLogger(Facade.class);
 
     static SmartQQClient client;
-
-    static SmartQQClient getClient(){
-        client;
-    }
+    static Receiver receiver;
 
     static main(args){
 
         //应用扩展方法
         ExtensionManager.applyExtesion();
         //初始化Log4
-        PropertyConfigurator.configure(Application.class.getResourceAsStream(ConfigConst.LOG4J));
-        //初始化facade
-        MessageCallbackFacade facade = MessageCallbackFacade.create(ConfigConst.MESSAGECALLBACK_FACADE);
-
+        PropertyConfigurator.configure(Facade.class.getResourceAsStream(ConfigConst.LOG4J))
         //初始化客户端
-        client = new SmartQQClient(facade);
-
+        client = ApplicationContextHolder.instance.getBean(SmartQQClient.class)
+        receiver = ApplicationContextHolder.instance.getBean(Receiver.class)
     }
 }

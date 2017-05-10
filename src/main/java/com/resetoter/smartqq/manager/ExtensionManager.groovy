@@ -1,5 +1,6 @@
 package com.resetoter.smartqq.manager
 
+import com.resetoter.smartqq.client.SmartQQClientEx
 import com.resetoter.smartqq.util.extension.StringEx
 
 /**
@@ -9,5 +10,6 @@ class ExtensionManager {
 
     static applyExtesion(){
         StringEx.extesion();
+        SmartQQClientEx.extension();
     }
 }

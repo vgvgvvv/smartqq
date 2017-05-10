@@ -1,0 +1,46 @@
+[INFO] [main] 05-09 16:20:08,368 [MessageCallbackFacade] - 初始化回调器com.scienjus.smartqq.turning.TurningCallback
+[INFO] [main] 05-09 16:20:13,762 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
+[INFO] [main] 05-09 16:21:18,161 [MessageCallbackFacade] - 初始化回调器com.scienjus.smartqq.turning.TurningCallback
+[INFO] [main] 05-09 16:21:38,676 [MessageCallbackFacade] - 初始化回调器com.scienjus.smartqq.turning.TurningCallback
+[INFO] [main] 05-09 16:21:59,639 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
+[INFO] [main] 05-09 16:24:31,192 [MessageCallbackFacade] - 初始化回调器com.scienjus.smartqq.turning.TurningCallback
+[INFO] [main] 05-09 16:24:45,889 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
+[INFO] [main] 05-09 16:24:59,802 [SmartQQClient] - 正在登录，请稍后
+[INFO] [main] 05-09 16:25:01,867 [SmartQQClient] - 巧克力，欢迎！
+[INFO] [Thread-1] 05-09 16:25:12,321 [MessageCallbackFacade] - onMessage：阿萨德
+[INFO] [Thread-1] 05-09 16:25:13,035 [TurningCommon] - 阿道夫的撒阿萨德啦
+[INFO] [main] 05-09 16:25:17,732 [MessageCallbackFacade] - 初始化回调器com.scienjus.smartqq.turning.TurningCallback
+[INFO] [main] 05-09 16:25:18,761 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
+[INFO] [main] 05-10 18:37:49,336 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-10 18:37:49,341 [MessageCallbackFacade] - 初始化回调器:com.scienjus.smartqq.callback.battle.BattleCallback
+[INFO] [main] 05-10 18:38:30,843 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-10 18:38:30,848 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
+[INFO] [main] 05-10 18:38:31,473 [SmartQQClient] - 二维码已保存在 F:\JavaWorkplace\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
+[INFO] [main] 05-10 23:29:07,275 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-10 23:29:07,280 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
+[INFO] [main] 05-10 23:29:48,718 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-10 23:29:48,725 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
+[INFO] [main] 05-10 23:30:32,643 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-10 23:30:32,649 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
+[INFO] [main] 05-10 23:35:49,181 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-10 23:35:49,187 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
+[INFO] [main] 05-10 23:37:23,596 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-10 23:37:23,602 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
+[INFO] [main] 05-10 23:37:24,695 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
+[INFO] [main] 05-10 23:38:05,313 [SmartQQClient] - 正在登录，请稍后
+[INFO] [main] 05-10 23:38:06,093 [SmartQQClient] - AI！，欢迎！
+[INFO] [main] 05-10 23:39:35,497 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-10 23:39:35,505 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
+[INFO] [main] 05-10 23:39:36,166 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
+[INFO] [main] 05-10 23:40:02,799 [SmartQQClient] - 正在登录，请稍后
+[INFO] [main] 05-10 23:40:03,439 [SmartQQClient] - AI！，欢迎！
+[INFO] [main] 05-10 23:42:12,187 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-10 23:42:12,195 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
+[INFO] [main] 05-10 23:42:12,867 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
+[INFO] [main] 05-10 23:42:37,351 [SmartQQClient] - 正在登录，请稍后
+[INFO] [main] 05-10 23:42:37,965 [SmartQQClient] - AI！，欢迎！
+[INFO] [Thread-1] 05-10 23:42:48,204 [MessageCallbackFacade] - onGroupMessage：感觉要先把服务端关掉
+[INFO] [Thread-1] 05-10 23:43:11,308 [MessageCallbackFacade] - onGroupMessage：test
+[ERROR] [Thread-1] 05-10 23:43:11,905 [SmartQQClient] - net.dongliu.requests.exception.RequestException: 请求失败，Api返回码[6]
+[INFO] [Thread-1] 05-10 23:46:41,544 [MessageCallbackFacade] - onGroupMessage：奥比 怎么又请求错误
+[ERROR] [Thread-1] 05-10 23:46:42,142 [SmartQQClient] - net.dongliu.requests.exception.RequestException: 请求失败，Api返回码[6]
