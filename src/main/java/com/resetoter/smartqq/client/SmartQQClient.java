@@ -6,7 +6,6 @@ import com.alibaba.fastjson.JSONObject;
 import com.resetoter.smartqq.callback.MessageCallback;
 import com.resetoter.smartqq.model.*;
 import com.resetoter.smartqq.constant.ApiURL;
-import com.scienjus.smartqq.model.*;
 import net.dongliu.requests.Client;
 import net.dongliu.requests.HeadOnlyRequestBuilder;
 import net.dongliu.requests.Response;

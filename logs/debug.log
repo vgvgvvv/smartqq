@@ -30,3 +30,10 @@
 [DEBUG] [Thread-1] 05-09 16:25:22,779 [SmartQQClient] - 开始发送消息
 [DEBUG] [Thread-1] 05-09 16:25:22,950 [SmartQQClient] - 发送成功
 [DEBUG] [Thread-1] 05-09 16:25:22,950 [SmartQQClient] - 开始接收消息
+[INFO] [main] 05-10 18:37:49,336 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-10 18:37:49,341 [MessageCallbackFacade] - 初始化回调器:com.scienjus.smartqq.callback.battle.BattleCallback
+[INFO] [main] 05-10 18:38:30,843 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-10 18:38:30,848 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
+[DEBUG] [main] 05-10 18:38:31,189 [SmartQQClient] - 开始获取二维码
+[INFO] [main] 05-10 18:38:31,473 [SmartQQClient] - 二维码已保存在 F:\JavaWorkplace\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
+[DEBUG] [main] 05-10 18:38:31,473 [SmartQQClient] - 等待扫描二维码

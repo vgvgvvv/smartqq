@@ -1,5 +1,7 @@
 package com.resetoter.smartqq.callback.battle
 
+import com.resetoter.battleqq.facade.BattleFacade
+import com.resetoter.battleqq.spring.BattleQQContext
 import com.resetoter.smartqq.callback.MessageCallback
 import com.resetoter.smartqq.model.DiscussMessage
 import com.resetoter.smartqq.model.GroupMessage
@@ -10,22 +12,21 @@ import com.resetoter.smartqq.model.Message
  */
 class BattleCallback implements MessageCallback{
 
-    def BattleCallback(){
-
-    }
-
     @Override
     void onMessage(Message message) {
-
+        ((BattleFacade)BattleQQContext.instance.context.getBean(BattleFacade.class))
+                .onMessage(message);
     }
 
     @Override
     void onGroupMessage(GroupMessage message) {
-
+        ((BattleFacade)BattleQQContext.instance.context.getBean(BattleFacade.class))
+                .onGroupMessage(message);
     }
 
     @Override
     void onDiscussMessage(DiscussMessage message) {
-
+        ((BattleFacade)BattleQQContext.instance.context.getBean(BattleFacade.class))
+                .onDiscussMessage(message);
     }
 }

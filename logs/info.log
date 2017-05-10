@@ -11,3 +11,8 @@
 [INFO] [Thread-1] 05-09 16:25:13,035 [TurningCommon] - 阿道夫的撒阿萨德啦
 [INFO] [main] 05-09 16:25:17,732 [MessageCallbackFacade] - 初始化回调器com.scienjus.smartqq.turning.TurningCallback
 [INFO] [main] 05-09 16:25:18,761 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
+[INFO] [main] 05-10 18:37:49,336 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-10 18:37:49,341 [MessageCallbackFacade] - 初始化回调器:com.scienjus.smartqq.callback.battle.BattleCallback
+[INFO] [main] 05-10 18:38:30,843 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-10 18:38:30,848 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
+[INFO] [main] 05-10 18:38:31,473 [SmartQQClient] - 二维码已保存在 F:\JavaWorkplace\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
