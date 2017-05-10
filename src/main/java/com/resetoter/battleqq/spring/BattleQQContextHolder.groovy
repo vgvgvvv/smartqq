@@ -7,8 +7,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * Created by Administrator on 2017/5/10.
  */
 @Singleton
-class BattleQQContext {
+class BattleQQContextHolder {
 
-    public final AnnotationConfigApplicationContext context =
+    @Delegate
+    final AnnotationConfigApplicationContext context =
             new AnnotationConfigApplicationContext(BattleQQConfig.class)
 }

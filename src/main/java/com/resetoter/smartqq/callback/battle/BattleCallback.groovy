@@ -1,8 +1,9 @@
 package com.resetoter.smartqq.callback.battle
 
 import com.resetoter.battleqq.facade.BattleFacade
-import com.resetoter.battleqq.spring.BattleQQContext
+import com.resetoter.battleqq.spring.BattleQQContextHolder
 import com.resetoter.smartqq.callback.MessageCallback
+import com.resetoter.smartqq.facade.Facade
 import com.resetoter.smartqq.model.DiscussMessage
 import com.resetoter.smartqq.model.GroupMessage
 import com.resetoter.smartqq.model.Message
@@ -14,19 +15,25 @@ class BattleCallback implements MessageCallback{
 
     @Override
     void onMessage(Message message) {
-        ((BattleFacade)BattleQQContext.instance.context.getBean(BattleFacade.class))
-                .onMessage(message);
+        if(Facade.getClient() == null)
+            return;
+        ((BattleFacade)BattleQQContextHolder.instance.getBean(BattleFacade.class))
+                .onMessage(Facade.getClient(), message);
     }
 
     @Override
     void onGroupMessage(GroupMessage message) {
-        ((BattleFacade)BattleQQContext.instance.context.getBean(BattleFacade.class))
-                .onGroupMessage(message);
+        if(Facade.getClient() == null)
+            return;
+        ((BattleFacade)BattleQQContextHolder.instance.getBean(BattleFacade.class))
+                .onGroupMessage(Facade.getClient(), message);
     }
 
     @Override
     void onDiscussMessage(DiscussMessage message) {
-        ((BattleFacade)BattleQQContext.instance.context.getBean(BattleFacade.class))
-                .onDiscussMessage(message);
+        if(Facade.getClient() == null)
+            return;
+        ((BattleFacade)BattleQQContextHolder.instance.getBean(BattleFacade.class))
+                .onDiscussMessage(Facade.getClient(), message);
     }
 }
