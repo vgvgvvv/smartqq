@@ -14,7 +14,7 @@ public class Font {
     private static Font defaultFont() {
         Font font = new Font();
         font.setColor("000000");
-        font.setStyle(new int[]{0, 0, 0});
+        font.setStyle([0, 0, 0] as int[]);
         font.setName("宋体");
         font.setSize(10);
         return font;

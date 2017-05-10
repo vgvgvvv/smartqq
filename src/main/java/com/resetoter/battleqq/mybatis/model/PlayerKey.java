@@ -3,7 +3,7 @@ package com.resetoter.battleqq.mybatis.model;
 public class PlayerKey {
     private Integer id;
 
-    private Integer qqnumber;
+    private String playername;
 
     public Integer getId() {
         return id;
@@ -13,11 +13,11 @@ public class PlayerKey {
         this.id = id;
     }
 
-    public Integer getQqnumber() {
-        return qqnumber;
+    public String getPlayername() {
+        return playername;
     }
 
-    public void setQqnumber(Integer qqnumber) {
-        this.qqnumber = qqnumber;
+    public void setPlayername(String playername) {
+        this.playername = playername == null ? null : playername.trim();
     }
 }

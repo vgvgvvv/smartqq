@@ -16,7 +16,7 @@ class MessageCallbackFacade implements MessageCallback {
 
     static Logger logger = Logger.getLogger(MessageCallbackFacade.class);
 
-    private List<MessageCallback> callbackList = new ArrayList<>();
+    private List<MessageCallback> callbackList = new ArrayList<MessageCallback>();
 
     static MessageCallbackFacade create(String configPath){
         MessageCallbackFacade facade = new MessageCallbackFacade();

@@ -112,31 +112,23 @@ public class TurningCommon {
     public static String handleResult(String res){
         JSONObject obj = JSONObject.parseObject(res);
         switch ((Integer) obj.get("code")){
-            case 100000:{
+            case 100000:
                 return (String)obj.get("text");
-            }
-            case 200000:{
+            case 200000:
                 return (String)obj.get("text") + "\n" + (String)obj.get("url");
-            }
-            case 302000:{
+            case 302000:
                 JSONArray list = obj.getJSONArray("list");
                 return res;//(String)obj.get("text") + "\n";
-            }
-            case 308000:{
+            case 308000:
                 return res;//(String)obj.get("text") + "\n" + (String)obj.get("url");
-            }
-            case 40001:{
+            case 40001:
                 return "我他妈报错，快联系迪赛！";
-            }
-            case 40002:{
+            case 40002:
                 return "奥比嗯侧后？";
-            }
-            case 40004:{
+            case 40004:
                 return "次数用完了，再见！";
-            }
-            case 40007:{
+            case 40007:
                 return "我他妈数据不对，快联系迪赛！";
-            }
         }
         return res;
     }

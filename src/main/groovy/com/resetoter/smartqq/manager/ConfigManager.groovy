@@ -9,7 +9,7 @@ import java.util.Properties;
  * Created by Administrator on 2016/11/21.
  */
 public class ConfigManager {
-    private static Map<String, Properties> propertyPool = new HashMap<>();
+    static HashMap<String, Properties> propertyPool = new HashMap<String, Properties>();
 
     public static String getProperty(String configName , String name) {
         return getConfig(configName).getProperty(name);

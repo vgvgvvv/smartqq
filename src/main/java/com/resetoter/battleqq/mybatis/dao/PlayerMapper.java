@@ -12,6 +12,8 @@ public interface PlayerMapper {
 
     Player selectByPrimaryKey(PlayerKey key);
 
+    Player selectByName(PlayerKey key);
+
     int updateByPrimaryKeySelective(Player record);
 
     int updateByPrimaryKey(Player record);

@@ -3,9 +3,6 @@ package com.resetoter.smartqq.facade
 import com.resetoter.battleqq.mybatis.dao.PlayerMapper
 import com.resetoter.battleqq.mybatis.model.Player
 import com.resetoter.smartqq.spring.ApplicationContextHolder
-import org.springframework.transaction.TransactionDefinition
-import org.springframework.transaction.TransactionStatus
-import org.springframework.transaction.support.DefaultTransactionDefinition
 
 /**
  * Created by 35207 on 2017/5/8 0008.

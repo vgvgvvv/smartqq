@@ -15,8 +15,8 @@ class Facade {
 
     static Logger logger = Logger.getLogger(Facade.class);
 
-    static SmartQQClient client;
-    static Receiver receiver;
+    public static SmartQQClient client;
+    public static Receiver receiver;
 
     static main(args){
 

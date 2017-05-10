@@ -21,7 +21,7 @@ public class HttpHelper {
     public static String sendPost(String path, String param) {
         System.out.println(param);
         OutputStreamWriter out = null;
-        BufferedReader in = null;
+        BufferedReader bufferedReader = null;
         String result = "";
         try {
             URL url = new URL(path);
@@ -66,8 +66,8 @@ public class HttpHelper {
                 if(out!=null){
                     out.close();
                 }
-                if(in!=null){
-                    in.close();
+                if(bufferedReader!=null){
+                    bufferedReader.close();
                 }
             }
             catch(IOException ex){
