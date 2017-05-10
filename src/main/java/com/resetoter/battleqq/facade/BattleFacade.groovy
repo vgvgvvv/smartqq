@@ -14,8 +14,6 @@ import com.resetoter.smartqq.model.Message
 class BattleFacade{
 
     //储存所有玩家
-    //Dictionary<String, Player> playerDictionary = new HashMap<>();
-
 
     void onMessage(SmartQQClient client, Message message) {
 
@@ -31,16 +29,6 @@ class BattleFacade{
 
 
 
-
-    @BattleCommand(commandName = "干死")
-    def Attack(GroupMessage message){
-
-    }
-
-    @BattleCommand(commandName = "创建角色！")
-    def CreateCharacter(GroupMessage message){
-
-    }
 
 
 }
