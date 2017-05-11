@@ -10,6 +10,7 @@ import com.resetoter.smartqq.model.GroupMessage
 import com.resetoter.smartqq.spring.ApplicationContextHolder
 import org.apache.log4j.Logger
 import org.springframework.stereotype.Component
+import rx.lang.groovy.RxGroovyExtensionModule;
 
 /**
  * Created by Administrator on 2017/5/10.
