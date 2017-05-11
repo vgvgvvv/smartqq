@@ -5,7 +5,8 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.resetoter.smartqq.callback.MessageCallback;
 import com.resetoter.smartqq.model.*;
-import com.resetoter.smartqq.constant.ApiURL;
+import com.resetoter.smartqq.constant.ApiURL
+import com.resetoter.smartqq.util.HashHelper;
 import net.dongliu.requests.Client;
 import net.dongliu.requests.HeadOnlyRequestBuilder;
 import net.dongliu.requests.Response;
@@ -65,7 +66,7 @@ public class SmartQQClient implements Closeable {
         login();
         if (callback != null) {
             this.pollStarted = true;
-            new Thread(()->{
+            new Thread({
                 while (true) {
                     if (!pollStarted) {
                         return;
@@ -615,10 +616,13 @@ public class SmartQQClient implements Closeable {
     private Response<String> postWithRetry(ApiURL url, JSONObject r) {
         int times = 0;
         Response<String> response;
-        do {
+
+        response = post(url, r);
+        times++;
+        while (times < RETRY_TIMES && response.getStatusCode() != 200){
             response = post(url, r);
             times++;
-        }while (times < RETRY_TIMES && response.getStatusCode() != 200);
+        }
         return response;
     }
 
@@ -689,14 +693,14 @@ public class SmartQQClient implements Closeable {
         int[] N = new int[4];
         for (int T = 0; T < K.length(); T++) {
             int index = T % 4;
-            N[index] ^= K.charAt(T);
+            N[index] = N[index] ^ ((int)K.charAt(T));
         }
-        String[] U = new String[]{"EC", "OK"};
+        String[] U = ["EC", "OK"] as String[];
         long[] V = new long[4];
-        V[0] = x >> 24 & 255 ^ U[0].charAt(0);
-        V[1] = x >> 16 & 255 ^ U[0].charAt(1);
-        V[2] = x >> 8 & 255 ^ U[1].charAt(0);
-        V[3] = x & 255 ^ U[1].charAt(1);
+        V[0] = x >> 24 & 255 ^ (int)U[0].charAt(0);
+        V[1] = x >> 16 & 255 ^ (int)U[0].charAt(1);
+        V[2] = x >> 8 & 255 ^ (int)U[1].charAt(0);
+        V[3] = x & 255 ^ (int)U[1].charAt(1);
 
         long[] U1 = new long[8];
 
@@ -704,7 +708,7 @@ public class SmartQQClient implements Closeable {
             U1[T] = T % 2 == 0 ? N[T >> 1] : V[T >> 1];
         }
 
-        String[] N1 = new String[]{"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"};
+        String[] N1 = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"] as String[];
         String V1 = "";
         for (long aU1 : U1) {
             V1 += N1[(int) ((aU1 >> 4) & 15)];
