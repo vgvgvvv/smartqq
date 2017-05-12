@@ -57,6 +57,8 @@ public class SmartQQClient implements Closeable {
     private long uin;
     private String psessionid;
 
+    UserInfo userInfo;
+
     //线程开关
     private volatile boolean pollStarted;
 
@@ -97,7 +99,7 @@ public class SmartQQClient implements Closeable {
         getUinAndPsessionid();
         getFriendStatus(); //修复Api返回码[103]的问题
         //登录成功欢迎语
-        UserInfo userInfo = getAccountInfo();
+        userInfo = getAccountInfo();
         LOGGER.info(userInfo.getNick() + "，欢迎！");
     }
 
@@ -401,6 +403,9 @@ public class SmartQQClient implements Closeable {
      */
     public UserInfo getAccountInfo() {
         LOGGER.debug("开始获取登录用户信息");
+
+        if(userInfo != null)
+            return userInfo
 
         Response<String> response = get(ApiURL.GET_ACCOUNT_INFO);
         return JSON.parseObject(getJsonObjectResult(response).toJSONString(), UserInfo.class);
