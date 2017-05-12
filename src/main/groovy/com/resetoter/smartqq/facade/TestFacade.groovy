@@ -1,7 +1,7 @@
 package com.resetoter.smartqq.facade
 
-import com.resetoter.battleqq.mybatis.dao.PlayerMapper
-import com.resetoter.battleqq.mybatis.model.Player
+import com.resetoter.battleqq.mybatis.dao.PlayerInfoMapper
+import com.resetoter.battleqq.mybatis.model.PlayerInfo
 import com.resetoter.smartqq.spring.ApplicationContextHolder
 
 /**
@@ -12,8 +12,8 @@ class TestFacade {
     static main(args){
         System.out.println("Hello")
         try{
-            PlayerMapper mapper = ApplicationContextHolder.instance.getBean(PlayerMapper.class);
-            Player player = new Player();
+            PlayerInfoMapper mapper = ApplicationContextHolder.instance.getBean(PlayerInfoMapper.class);
+            PlayerInfo player = new PlayerInfo();
             player.qqnumber = 101000;
             player.point = 0;
             mapper.insert(player)

@@ -1,7 +1,7 @@
 package com.resetoter.battleqq.facade
 
 import com.resetoter.battleqq.logic.PlayerDailyReward
-import com.resetoter.battleqq.mybatis.model.Player
+import com.resetoter.battleqq.mybatis.model.PlayerInfo
 import com.resetoter.smartqq.client.SmartQQClient
 import com.resetoter.smartqq.model.DiscussMessage
 import com.resetoter.smartqq.model.GroupMessage
@@ -16,7 +16,7 @@ class BattleFacade{
     static Logger logger  = Logger.getLogger(BattleFacade.class)
 
     //储存所有玩家
-    HashMap<Integer, Player> playerHashMap = new HashMap<Integer, Player>();
+    HashMap<Integer, PlayerInfo> playerHashMap = new HashMap<Integer, PlayerInfo>();
 
     public BattleFacade(){
 

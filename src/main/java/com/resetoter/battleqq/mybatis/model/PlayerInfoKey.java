@@ -1,6 +1,6 @@
 package com.resetoter.battleqq.mybatis.model;
 
-public class PlayerKey {
+public class PlayerInfoKey {
     private Integer id;
 
     private String playername;

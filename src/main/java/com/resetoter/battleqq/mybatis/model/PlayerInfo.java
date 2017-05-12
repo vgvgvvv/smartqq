@@ -1,6 +1,6 @@
 package com.resetoter.battleqq.mybatis.model;
 
-public class Player extends PlayerKey {
+public class PlayerInfo extends PlayerInfoKey {
     private Integer point;
 
     public Integer getPoint() {

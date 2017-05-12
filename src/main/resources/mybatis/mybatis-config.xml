@@ -5,12 +5,12 @@
 <configuration>
 
    <typeAliases>
-       <typeAlias type="com.resetoter.battleqq.mybatis.model.Player" alias="Player"/>
+       <typeAlias type="com.resetoter.battleqq.mybatis.model.PlayerInfo" alias="PlayerInfo"/>
    </typeAliases>
 
 
     <mappers>
-        <mapper resource="mybatis/mapper/battleqq/PlayerMapper.xml"/>
+        <mapper resource="mybatis/mapper/battleqq/PlayerInfoMapper.xml"/>
     </mappers>
 
 </configuration>

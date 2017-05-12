@@ -1,7 +1,8 @@
 package com.resetoter.smartqq.callback.turning;
 
 import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.JSONObject
+import com.resetoter.smartqq.facade.Facade;
 import com.resetoter.smartqq.model.Message;
 import com.resetoter.smartqq.util.HttpHelper;
 import com.resetoter.smartqq.client.SmartQQClient;
@@ -25,16 +26,17 @@ public class TurningCommon {
      * @param message
      */
     public static void ResponseGroup(SmartQQClient client, GroupMessage message){
+        String nickName = Facade.receiver.getGroupUserNick(message)
         if(message.getContent().equals("召唤爱酱！")){
             speaking = true;
-            logger.info("爱酱来啦！");
-            client.sendMessageToGroup(message.getGroupId(), "爱酱来啦！");
+            logger.info("@${nickName} 爱酱来啦！");
+            client.sendMessageToGroup(message.getGroupId(), "@${nickName} 爱酱来啦！");
             return;
         }
         else if(message.getContent().equals("爱酱闭嘴！")){
             speaking = false;
-            logger.info("哦！");
-            client.sendMessageToGroup(message.getGroupId(), "哦！");
+            logger.info("@${nickName} 哦！");
+            client.sendMessageToGroup(message.getGroupId(), "@${nickName} 哦！");
             return;
         }
         else if(speaking){
@@ -52,7 +54,7 @@ public class TurningCommon {
 
             String result = HttpHelper.sendPost("http://www.tuling123.com/openapi/api", post);
 
-            client.sendMessageToGroup(message.getGroupId(), handleResult(result));
+            client.sendMessageToGroup(message.getGroupId(), "@${nickName} " + handleResult(result));
         }
         else if(message.getContent().startsWith("爱酱")){
             if(message.getContent().equals("爱酱")){
@@ -74,7 +76,7 @@ public class TurningCommon {
 
             String res = handleResult(result);
             logger.info(res);
-            client.sendMessageToGroup(message.getGroupId(), res);
+            client.sendMessageToGroup(message.getGroupId(), "@${nickName} " + res);
         }
     }
 

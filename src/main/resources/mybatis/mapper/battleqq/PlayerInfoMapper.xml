@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.resetoter.battleqq.mybatis.dao.PlayerMapper">
-  <resultMap id="BaseResultMap" type="com.resetoter.battleqq.mybatis.model.Player">
+<mapper namespace="com.resetoter.battleqq.mybatis.dao.PlayerInfoMapper">
+  <resultMap id="BaseResultMap" type="com.resetoter.battleqq.mybatis.model.PlayerInfo">
     <id column="id" jdbcType="INTEGER" property="id" />
     <id column="playerName" jdbcType="VARCHAR" property="playername" />
     <result column="point" jdbcType="INTEGER" property="point" />
@@ -9,31 +9,31 @@
   <sql id="Base_Column_List">
     id, playerName, point
   </sql>
-  <select id="selectByPrimaryKey" parameterType="com.resetoter.battleqq.mybatis.model.PlayerKey" resultMap="BaseResultMap">
-    select 
-    <include refid="Base_Column_List" />
-    from playerinfo
-    where id = #{id,jdbcType=INTEGER}
-      and playerName = #{playername,jdbcType=VARCHAR}
+  <select id="selectByPrimaryKey" parameterType="com.resetoter.battleqq.mybatis.model.PlayerInfoKey" resultMap="BaseResultMap">
+  select
+  <include refid="Base_Column_List" />
+  from playerinfo
+  where id = #{id,jdbcType=INTEGER}
+  and playerName = #{playername,jdbcType=VARCHAR}
   </select>
-  <select id="selectByName" parameterType="com.resetoter.battleqq.mybatis.model.PlayerKey" resultMap="BaseResultMap">
+  <select id="selectByName" parameterType="com.resetoter.battleqq.mybatis.model.PlayerInfoKey" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List" />
     from playerinfo
     where playerName = #{playername,jdbcType=VARCHAR}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="com.resetoter.battleqq.mybatis.model.PlayerKey">
+  <delete id="deleteByPrimaryKey" parameterType="com.resetoter.battleqq.mybatis.model.PlayerInfoKey">
     delete from playerinfo
     where id = #{id,jdbcType=INTEGER}
       and playerName = #{playername,jdbcType=VARCHAR}
   </delete>
-  <insert id="insert" parameterType="com.resetoter.battleqq.mybatis.model.Player">
+  <insert id="insert" parameterType="com.resetoter.battleqq.mybatis.model.PlayerInfo">
     insert into playerinfo (id, playerName, point
       )
     values (#{id,jdbcType=INTEGER}, #{playername,jdbcType=VARCHAR}, #{point,jdbcType=INTEGER}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.resetoter.battleqq.mybatis.model.Player">
+  <insert id="insertSelective" parameterType="com.resetoter.battleqq.mybatis.model.PlayerInfo">
     insert into playerinfo
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -58,7 +58,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.resetoter.battleqq.mybatis.model.Player">
+  <update id="updateByPrimaryKeySelective" parameterType="com.resetoter.battleqq.mybatis.model.PlayerInfo">
     update playerinfo
     <set>
       <if test="point != null">
@@ -68,7 +68,7 @@
     where id = #{id,jdbcType=INTEGER}
       and playerName = #{playername,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.resetoter.battleqq.mybatis.model.Player">
+  <update id="updateByPrimaryKey" parameterType="com.resetoter.battleqq.mybatis.model.PlayerInfo">
     update playerinfo
     set point = #{point,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
