@@ -1,5 +1,6 @@
 package com.resetoter.battleqq.logic
 
+import com.resetoter.battleqq.Entity.PlayerEx
 import com.resetoter.battleqq.mybatis.dao.PlayerInfoMapper
 import com.resetoter.battleqq.mybatis.model.PlayerInfo
 import com.resetoter.smartqq.client.SmartQQClient
@@ -17,7 +18,7 @@ class PlayerDailyReward {
         String nickName = Facade.receiver.getGroupUserNick(message)
         PlayerInfo player = mapper.selectByPrimaryKey(nickName)
         if(player.is(null)){
-            mapper.insert(new PlayerInfo(playername: nickName, point: 0, power: 1, speed: 1, hp: 100, def: 1))
+            mapper.insert(PlayerEx.getDefaultPlayerInfo(nickName))
             client.sendMessageToGroup(message.groupId, "@{$nickName} 你第一次讲话，被视作创建角色！")
         }else{
             player.point = player.point + message.content.length()

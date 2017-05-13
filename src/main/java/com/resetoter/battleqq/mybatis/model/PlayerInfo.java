@@ -13,6 +13,8 @@ public class PlayerInfo {
 
     private Integer hp;
 
+    private String lastkiller;
+
     public String getPlayername() {
         return playername;
     }
@@ -59,5 +61,13 @@ public class PlayerInfo {
 
     public void setHp(Integer hp) {
         this.hp = hp;
+    }
+
+    public String getLastkiller() {
+        return lastkiller;
+    }
+
+    public void setLastkiller(String lastkiller) {
+        this.lastkiller = lastkiller == null ? null : lastkiller.trim();
     }
 }
