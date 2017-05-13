@@ -10,7 +10,7 @@ class PlayerEx {
 
     static extension(){
         PlayerInfo.metaClass.getMaxHp = {
-            ((PlayerInfo)delegate).power * 15 + 500
+            ((PlayerInfo)delegate).power * 100 + 500
         }
     }
 
@@ -22,7 +22,7 @@ class PlayerEx {
         if(attacker.power - beAttacked.def <= 0){
             Util.random.nextInt(attacker.speed * 50)
         }else{
-            (attacker.power - beAttacked.def) * 100 + attacker.speed * (Util.random.nextInt(100) - 50)
+            (attacker.power - beAttacked.def) * 100 + attacker.speed * (Util.random.nextInt(150) + 150)
         }
     }
 

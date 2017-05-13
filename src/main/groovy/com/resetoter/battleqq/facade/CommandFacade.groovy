@@ -170,6 +170,7 @@ class CommandFacade {
 
         player.point -= powerCost * addPower
         player.power += addPower
+        player.hp = player.maxHp
 
         mapper.updateByPrimaryKey(player)
         client.sendMessageToGroup(message.groupId,"@$nickName 花费了 ${powerCost * addPower} 点积分提升了 ${addPower} 点力量")
@@ -206,7 +207,8 @@ class CommandFacade {
         }
 
         player.point -= speedCost * addSpeed
-        player.power += addSpeed
+        player.speed += addSpeed
+        player.hp = player.maxHp
 
         mapper.updateByPrimaryKey(player)
         client.sendMessageToGroup(message.groupId,"@$nickName 花费了 ${speedCost * addSpeed} 点积分提升了 ${addSpeed} 点速度")
@@ -243,7 +245,8 @@ class CommandFacade {
         }
 
         player.point -= defCost * addDef
-        player.power += addDef
+        player.def += addDef
+        player.hp = player.maxHp
 
         mapper.updateByPrimaryKey(player)
         client.sendMessageToGroup(message.groupId,"@$nickName 花费了 ${defCost * addDef} 点积分提升了 ${addDef} 点防御")
