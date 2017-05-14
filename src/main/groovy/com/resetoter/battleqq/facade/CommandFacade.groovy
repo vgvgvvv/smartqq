@@ -251,4 +251,17 @@ class CommandFacade {
         mapper.updateByPrimaryKey(player)
         client.sendMessageToGroup(message.groupId,"@$nickName 花费了 ${defCost * addDef} 点积分提升了 ${addDef} 点防御")
     }
+
+    @BattleCommand(commandName = "查看VPN节点")
+    static VPN(SmartQQClient client, GroupMessage message){
+        String content = message.getContent()
+        if(!content.startsWith("查看VPN节点"))
+            return
+
+        client.sendMessageToGroup(message.groupId,
+                "IP：108.61.222.200\n" +
+                        "端口：443\n" +
+                        "密码：123456\n" +
+                        "加密方式：aes-256-cfb")
+    }
 }
