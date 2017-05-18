@@ -2,6 +2,7 @@ package com.resetoter.battleqq.facade
 
 import com.resetoter.battleqq.Entity.PlayerEx
 import com.resetoter.battleqq.logic.BattleCommand
+import com.resetoter.battleqq.logic.MagicBattle
 import com.resetoter.battleqq.logic.PlayerBattle
 import com.resetoter.battleqq.mybatis.dao.PlayerInfoMapper
 import com.resetoter.battleqq.mybatis.model.PlayerInfo
@@ -51,9 +52,22 @@ class CommandFacade {
         String nickName = Facade.receiver.getGroupUserNick(message)
         String enemyName = message.content.substring(4).trim();
 
-        PlayerBattle.battle(client, message, nickName, enemyName)
+        //PlayerBattle.battle(client, message, nickName, enemyName)
+        client.sendMessageToGroup(message.groupId, "@$nickName 现在早就不流行拿刀战斗了！")
     }
 
+    @BattleCommand(commandName = "炸裂吧！")
+    static MagicBattle(SmartQQClient client, GroupMessage message){
+        if(!message.content.startsWith("炸裂吧！@"))
+            return
+
+        String nickName = Facade.receiver.getGroupUserNick(message)
+        String enemyName = message.content.substring(5).trim();
+
+        new MagicBattle(client, message, nickName, enemyName).battle()
+    }
+
+    static int rebornCost = 100
     @BattleCommand(commandName = "复活！")
     static ReBorn(SmartQQClient client, GroupMessage message){
         if(message.getContent() != "复活！")
@@ -63,7 +77,7 @@ class CommandFacade {
         String nickName = Facade.receiver.getGroupUserNick(message)
         PlayerInfo player = mapper.selectByPrimaryKey(nickName)
 
-        if(player.point <= 100){
+        if(player.point <= rebornCost){
             client.sendMessageToGroup(message.groupId, "@$nickName 没积分啊！穷逼")
             return
         }
@@ -76,9 +90,9 @@ class CommandFacade {
             client.sendMessageToGroup(message.groupId, "@$nickName 创建角色先啊！")
             return
         }else{
-            client.sendMessageToGroup(message.groupId, "@$nickName 你消耗了500点积分以复活")
-            player.point -= 500
-            player.hp = player.getMaxHp()
+            client.sendMessageToGroup(message.groupId, "@$nickName 你消耗了 $rebornCost 点积分以复活")
+            player.point -= rebornCost
+            player.hp = PlayerEx.getMaxHp()
             mapper.updateByPrimaryKey(player)
         }
 
@@ -112,9 +126,6 @@ class CommandFacade {
             client.sendMessageToGroup(message.groupId,
                     "@$nickName \n" +
                             "你角色目前的积分为:" + player.point + "点\n" +
-                            "力量为：" + player.power + "点\n" +
-                            "防御为：" + player.def + "点\n" +
-                            "速度为: " + player.speed + "点\n" +
                             "当前生命值为" + player.hp + "点\n"
             )
         }
@@ -135,121 +146,6 @@ class CommandFacade {
         }
 
         client.sendMessageToGroup(message.groupId,"@$nickName 上次杀死你的是 @${player.lastkiller}！")
-    }
-
-    static int powerCost = 1000;
-    @BattleCommand(commandName = "增加力量：")
-    static AddPower(SmartQQClient client, GroupMessage message){
-        String content = message.getContent()
-        if(!content.startsWith("增加力量："))
-            return
-
-        def mapper = ApplicationContextHolder.instance.getBean(PlayerInfoMapper.class)
-        String nickName = Facade.receiver.getGroupUserNick(message)
-        PlayerInfo player = mapper.selectByPrimaryKey(nickName)
-
-        Integer addPower = -1;
-        try{
-            String num = content.substring(5)
-            addPower = Integer.parseInt(num)
-        }catch (Exception e){
-            logger.error(e.message, e)
-            client.sendMessageToGroup(message.groupId,"@$nickName 格式是 增加力量：数字 才行")
-            return
-        }
-
-        if(addPower < 0){
-            client.sendMessageToGroup(message.groupId,"@$nickName 不能小于零！")
-            return
-        }
-
-        if(player.point < powerCost * addPower){
-            client.sendMessageToGroup(message.groupId,"@$nickName 你没钱啊！")
-            return
-        }
-
-        player.point -= powerCost * addPower
-        player.power += addPower
-        player.hp = player.maxHp
-
-        mapper.updateByPrimaryKey(player)
-        client.sendMessageToGroup(message.groupId,"@$nickName 花费了 ${powerCost * addPower} 点积分提升了 ${addPower} 点力量")
-    }
-
-    static int speedCost = 1000;
-    @BattleCommand(commandName = "增加速度：")
-    static AddSpeed(SmartQQClient client, GroupMessage message){
-        String content = message.getContent()
-        if(!content.startsWith("增加速度："))
-            return
-
-        def mapper = ApplicationContextHolder.instance.getBean(PlayerInfoMapper.class)
-        String nickName = Facade.receiver.getGroupUserNick(message)
-        PlayerInfo player = mapper.selectByPrimaryKey(nickName)
-
-        Integer addSpeed = -1;
-        try{
-            addSpeed = Integer.parseInt(content.substring(5))
-        }catch (Exception e){
-            logger.error(e.message, e)
-            client.sendMessageToGroup(message.groupId,"@$nickName 格式是 增加速度：数字 才行")
-            return
-        }
-
-        if(addSpeed < 0){
-            client.sendMessageToGroup(message.groupId,"@$nickName 不能小于零！")
-            return
-        }
-
-        if(player.point < speedCost * addSpeed){
-            client.sendMessageToGroup(message.groupId,"@$nickName 你没钱啊！")
-            return
-        }
-
-        player.point -= speedCost * addSpeed
-        player.speed += addSpeed
-        player.hp = player.maxHp
-
-        mapper.updateByPrimaryKey(player)
-        client.sendMessageToGroup(message.groupId,"@$nickName 花费了 ${speedCost * addSpeed} 点积分提升了 ${addSpeed} 点速度")
-    }
-
-    static int defCost = 1000;
-    @BattleCommand(commandName = "增加防御：")
-    static AddDef(SmartQQClient client, GroupMessage message){
-        String content = message.getContent()
-        if(!content.startsWith("增加防御："))
-            return
-
-        def mapper = ApplicationContextHolder.instance.getBean(PlayerInfoMapper.class)
-        String nickName = Facade.receiver.getGroupUserNick(message)
-        PlayerInfo player = mapper.selectByPrimaryKey(nickName)
-
-        Integer addDef = -1;
-        try{
-            addDef = Integer.parseInt(content.substring(5))
-        }catch (Exception e){
-            logger.error(e.message, e)
-            client.sendMessageToGroup(message.groupId,"@$nickName 格式是 增加防御：数字 才行")
-            return
-        }
-
-        if(addDef < 0){
-            client.sendMessageToGroup(message.groupId,"@$nickName 不能小于零！")
-            return
-        }
-
-        if(player.point < defCost * addDef){
-            client.sendMessageToGroup(message.groupId,"@$nickName 你没钱啊！")
-            return
-        }
-
-        player.point -= defCost * addDef
-        player.def += addDef
-        player.hp = player.maxHp
-
-        mapper.updateByPrimaryKey(player)
-        client.sendMessageToGroup(message.groupId,"@$nickName 花费了 ${defCost * addDef} 点积分提升了 ${addDef} 点防御")
     }
 
     @BattleCommand(commandName = "查看VPN节点")

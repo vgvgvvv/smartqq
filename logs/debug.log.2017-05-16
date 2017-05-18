@@ -1,0 +1,46 @@
+[DEBUG] [Thread-1] 05-16 23:54:48,318 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-16 23:54:52,354 [SmartQQClient] - 开始获取好友列表
+[DEBUG] [Thread-1] 05-16 23:54:52,510 [SmartQQClient] - 开始获取群列表
+[DEBUG] [Thread-1] 05-16 23:54:52,651 [SmartQQClient] - 开始获取讨论组列表
+[INFO] [Thread-1] 05-16 23:54:52,791 [Receiver] - 映射完成
+[INFO] [Thread-1] 05-16 23:54:52,791 [MessageCallbackFacade] - onGroupMessage：干死 @爱酱 
+[DEBUG] [Thread-1] 05-16 23:54:52,807 [SmartQQClient] - 开始获取群资料
+[DEBUG] [Thread-1] 05-16 23:54:53,041 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-16 23:54:53,180 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-16 23:54:54,127 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-16 23:54:54,252 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-16 23:54:54,252 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-16 23:55:04,258 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-16 23:55:14,258 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-16 23:55:19,383 [MessageCallbackFacade] - onGroupMessage：干死 @爱酱 
+[DEBUG] [Thread-1] 05-16 23:55:19,383 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-16 23:55:19,524 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-16 23:55:19,618 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-16 23:55:29,620 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-16 23:55:39,647 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-16 23:55:42,274 [MessageCallbackFacade] - onGroupMessage：炸裂吧！ @爱酱 
+[DEBUG] [Thread-1] 05-16 23:55:42,336 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-16 23:55:52,337 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-16 23:56:51,165 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-16 23:56:53,778 [SmartQQClient] - 开始获取好友列表
+[DEBUG] [Thread-1] 05-16 23:56:53,934 [SmartQQClient] - 开始获取群列表
+[DEBUG] [Thread-1] 05-16 23:56:54,075 [SmartQQClient] - 开始获取讨论组列表
+[INFO] [Thread-1] 05-16 23:56:54,184 [Receiver] - 映射完成
+[INFO] [Thread-1] 05-16 23:56:54,184 [MessageCallbackFacade] - onGroupMessage：炸裂吧！ @爱酱 
+[DEBUG] [Thread-1] 05-16 23:56:54,200 [SmartQQClient] - 开始获取群资料
+[DEBUG] [Thread-1] 05-16 23:56:55,002 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-16 23:56:57,129 [MessageCallbackFacade] - onGroupMessage：炸裂吧！ @爱酱 
+[DEBUG] [Thread-1] 05-16 23:56:57,176 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-16 23:57:07,183 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-16 23:57:17,229 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-16 23:57:27,259 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-16 23:57:37,294 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-16 23:57:47,310 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-16 23:57:57,323 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-16 23:58:07,351 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-16 23:58:17,368 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-16 23:58:27,391 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-16 23:58:37,424 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-16 23:58:47,447 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-16 23:59:38,273 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-16 23:59:48,299 [SmartQQClient] - 开始接收消息

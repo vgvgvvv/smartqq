@@ -9,21 +9,19 @@ import com.resetoter.smartqq.util.Util
 class PlayerEx {
 
     static extension(){
-        PlayerInfo.metaClass.getMaxHp = {
-            ((PlayerInfo)delegate).power * 100 + 500
-        }
+
+    }
+
+    static int getMaxHp(){
+        500
     }
 
     static getDefaultPlayerInfo(nickName){
-        new PlayerInfo(playername: nickName, point: 0, power: 10, speed: 10, hp: 100, def: 10)
+        new PlayerInfo(playername: nickName, point: 0, power: 10, speed: 10, hp: 500, def: 10)
     }
 
     static getHurt(PlayerInfo attacker, PlayerInfo beAttacked){
-        if(attacker.power - beAttacked.def <= 0){
-            Util.random.nextInt(attacker.speed * 50)
-        }else{
-            (attacker.power - beAttacked.def) * 100 + attacker.speed * (Util.random.nextInt(150) + 150)
-        }
+        100
     }
 
 }

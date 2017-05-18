@@ -19,7 +19,7 @@ public class ConfigManager {
         Properties prop = new Properties();
         try {
             InputStream stream = ConfigManager.class.getResourceAsStream(fileName);
-            prop.load(stream);
+            prop.load(new InputStreamReader(stream, "GB2312"));
             propertyPool.put(fileName, prop);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -28,8 +28,8 @@ public class ConfigManager {
         }
     }
 
-    private static Properties getConfig(String configName) {
-        if(propertyPool.containsKey(configName) == false) {
+    public static Properties getConfig(String configName) {
+        if(!propertyPool.containsKey(configName)) {
             loadConfig(configName);
         }
         return propertyPool.get(configName);

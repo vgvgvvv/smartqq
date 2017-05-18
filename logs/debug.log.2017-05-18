@@ -1,0 +1,1797 @@
+[DEBUG] [Thread-1] 05-18 23:10:43,258 [SmartQQClient] - 开始获取好友列表
+[DEBUG] [Thread-1] 05-18 23:10:43,543 [SmartQQClient] - 开始获取群列表
+[DEBUG] [Thread-1] 05-18 23:10:43,779 [SmartQQClient] - 开始获取讨论组列表
+[INFO] [Thread-1] 05-18 23:10:43,989 [Receiver] - 映射完成
+[INFO] [Thread-1] 05-18 23:10:43,991 [MessageCallbackFacade] - onGroupMessage：笑死
+[DEBUG] [Thread-1] 05-18 23:10:44,005 [SmartQQClient] - 开始获取群资料
+[DEBUG] [Thread-1] 05-18 23:10:48,184 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:10:58,190 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:10:58,590 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@爱酱 
+[DEBUG] [Thread-1] 05-18 23:10:58,590 [SmartQQClient] - 开始获取群资料
+[ERROR] [Thread-1] 05-18 23:11:02,017 [MessageCallbackFacade] - 请求失败，Api返回码[100003]
+net.dongliu.requests.exception.RequestException: 请求失败，Api返回码[100003]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at com.resetoter.smartqq.client.SmartQQClient.getResponseJson(SmartQQClient.groovy:676)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite$StaticMetaMethodSiteNoUnwrapNoCoerce.invoke(StaticMetaMethodSite.java:151)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite.callStatic(StaticMetaMethodSite.java:102)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:206)
+	at com.resetoter.smartqq.client.SmartQQClient.getJsonObjectResult(SmartQQClient.groovy:636)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite$StaticMetaMethodSiteNoUnwrapNoCoerce.invoke(StaticMetaMethodSite.java:151)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite.callStatic(StaticMetaMethodSite.java:102)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:206)
+	at com.resetoter.smartqq.client.SmartQQClient.getGroupInfo(SmartQQClient.groovy:538)
+	at com.resetoter.smartqq.client.SmartQQClient$getGroupInfo$4.call(Unknown Source)
+	at com.resetoter.smartqq.facade.Receiver.getGroupInfoFromID(Receiver.groovy:67)
+	at com.resetoter.smartqq.facade.Receiver$getGroupInfoFromID$1.callCurrent(Unknown Source)
+	at com.resetoter.smartqq.facade.Receiver.getGroupUserNick(Receiver.groovy:148)
+	at com.resetoter.smartqq.facade.Receiver$getGroupUserNick$0.call(Unknown Source)
+	at com.resetoter.smartqq.callback.turning.TurningCommon.ResponseGroup(TurningCommon.groovy:29)
+	at com.resetoter.smartqq.callback.turning.TurningCommon$ResponseGroup.call(Unknown Source)
+	at com.resetoter.smartqq.callback.turning.TurningCallback.onGroupMessage(TurningCallback.groovy:24)
+	at com.resetoter.smartqq.callback.MessageCallback$onGroupMessage.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at com.resetoter.smartqq.callback.MessageCallback$onGroupMessage.call(Unknown Source)
+	at com.resetoter.smartqq.facade.MessageCallbackFacade$_onGroupMessage_closure3.doCall(MessageCallbackFacade.groovy:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at org.codehaus.groovy.runtime.ConvertedClosure.invokeCustom(ConvertedClosure.java:54)
+	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:124)
+	at com.sun.proxy.$Proxy19.accept(Unknown Source)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrap.invoke(PojoMetaMethodSite.java:213)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at com.resetoter.smartqq.facade.MessageCallbackFacade.onGroupMessage(MessageCallbackFacade.groovy:64)
+	at com.resetoter.smartqq.callback.MessageCallback$onGroupMessage.call(Unknown Source)
+	at com.resetoter.smartqq.client.SmartQQClient.pollMessage(SmartQQClient.groovy:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:384)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:69)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at com.resetoter.smartqq.client.SmartQQClient$_closure1.doCall(SmartQQClient.groovy:77)
+	at com.resetoter.smartqq.client.SmartQQClient$_closure1.doCall(SmartQQClient.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at groovy.lang.Closure.call(Closure.java:408)
+	at groovy.lang.Closure.run(Closure.java:495)
+	at java.lang.Thread.run(Thread.java:748)
+[DEBUG] [Thread-1] 05-18 23:11:02,039 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:11:12,041 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:11:19,508 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@爱酱 
+[DEBUG] [Thread-1] 05-18 23:11:19,508 [SmartQQClient] - 开始获取群资料
+[ERROR] [Thread-1] 05-18 23:11:30,782 [MessageCallbackFacade] - 
+java.lang.reflect.UndeclaredThrowableException
+	at com.sun.proxy.$Proxy19.accept(Unknown Source)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrap.invoke(PojoMetaMethodSite.java:213)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at com.resetoter.smartqq.facade.MessageCallbackFacade.onGroupMessage(MessageCallbackFacade.groovy:64)
+	at com.resetoter.smartqq.callback.MessageCallback$onGroupMessage.call(Unknown Source)
+	at com.resetoter.smartqq.client.SmartQQClient.pollMessage(SmartQQClient.groovy:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:384)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:69)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at com.resetoter.smartqq.client.SmartQQClient$_closure1.doCall(SmartQQClient.groovy:77)
+	at com.resetoter.smartqq.client.SmartQQClient$_closure1.doCall(SmartQQClient.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at groovy.lang.Closure.call(Closure.java:408)
+	at groovy.lang.Closure.run(Closure.java:495)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSite.invoke(PojoMetaMethodSite.java:192)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+	at com.resetoter.battleqq.facade.CommandFacade$_useCommand_closure2.doCall(CommandFacade.groovy:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at groovy.lang.Closure.call(Closure.java:430)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2030)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2015)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2068)
+	at org.codehaus.groovy.runtime.dgm$164.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:274)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at com.resetoter.battleqq.facade.CommandFacade.useCommand(CommandFacade.groovy:39)
+	at com.resetoter.battleqq.facade.CommandFacade$useCommand.call(Unknown Source)
+	at com.resetoter.battleqq.facade.BattleFacade.onGroupMessage(BattleFacade.groovy:30)
+	at com.resetoter.battleqq.facade.BattleFacade$onGroupMessage.call(Unknown Source)
+	at com.resetoter.smartqq.callback.battle.BattleCallback.onGroupMessage(BattleCallback.groovy:29)
+	at com.resetoter.smartqq.callback.MessageCallback$onGroupMessage.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at com.resetoter.smartqq.callback.MessageCallback$onGroupMessage.call(Unknown Source)
+	at com.resetoter.smartqq.facade.MessageCallbackFacade$_onGroupMessage_closure3.doCall(MessageCallbackFacade.groovy:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at org.codehaus.groovy.runtime.ConvertedClosure.invokeCustom(ConvertedClosure.java:54)
+	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:124)
+	... 36 more
+Caused by: groovy.lang.GroovyRuntimeException: Could not find matching constructor for: com.resetoter.battleqq.logic.MagicBattle(com.resetoter.smartqq.client.SmartQQClient, com.resetoter.smartqq.model.GroupMessage, java.lang.String, java.lang.String)
+	at groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1737)
+	at groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1537)
+	at org.codehaus.groovy.runtime.callsite.MetaClassConstructorSite.callConstructor(MetaClassConstructorSite.java:49)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:271)
+	at com.resetoter.battleqq.facade.CommandFacade.MagicBattle(CommandFacade.groovy:67)
+	... 87 more
+[DEBUG] [Thread-1] 05-18 23:11:30,787 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:11:40,789 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:11:50,965 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:12:01,045 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:12:11,213 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:12:21,364 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:12:31,569 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:12:41,344 [MessageCallbackFacade] - onGroupMessage：当然发邮件啦
+[DEBUG] [Thread-1] 05-18 23:12:41,661 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:12:51,664 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:13:00,175 [MessageCallbackFacade] - onGroupMessage：毛毛
+[DEBUG] [Thread-1] 05-18 23:13:00,415 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:13:10,417 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:13:10,718 [MessageCallbackFacade] - onGroupMessage：["face",13]["face",13]["face",13]
+[DEBUG] [Thread-1] 05-18 23:13:11,022 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:13:21,023 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:13:23,808 [MessageCallbackFacade] - onGroupMessage：你咋还不回家
+[DEBUG] [Thread-1] 05-18 23:13:24,097 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:13:34,098 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:14:08,375 [SmartQQClient] - 开始获取好友列表
+[DEBUG] [Thread-1] 05-18 23:14:08,693 [SmartQQClient] - 开始获取群列表
+[DEBUG] [Thread-1] 05-18 23:14:08,993 [SmartQQClient] - 开始获取讨论组列表
+[INFO] [Thread-1] 05-18 23:14:09,225 [Receiver] - 映射完成
+[INFO] [Thread-1] 05-18 23:14:09,226 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@爱酱 
+[DEBUG] [Thread-1] 05-18 23:14:09,238 [SmartQQClient] - 开始获取群资料
+[ERROR] [Thread-1] 05-18 23:14:09,612 [MessageCallbackFacade] - 
+java.lang.reflect.UndeclaredThrowableException
+	at com.sun.proxy.$Proxy19.accept(Unknown Source)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrap.invoke(PojoMetaMethodSite.java:213)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at com.resetoter.smartqq.facade.MessageCallbackFacade.onGroupMessage(MessageCallbackFacade.groovy:64)
+	at com.resetoter.smartqq.callback.MessageCallback$onGroupMessage.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at com.resetoter.smartqq.client.SmartQQClient.pollMessage(SmartQQClient.groovy:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:384)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:69)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at com.resetoter.smartqq.client.SmartQQClient$_closure1.doCall(SmartQQClient.groovy:77)
+	at com.resetoter.smartqq.client.SmartQQClient$_closure1.doCall(SmartQQClient.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at groovy.lang.Closure.call(Closure.java:408)
+	at groovy.lang.Closure.run(Closure.java:495)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSite.invoke(PojoMetaMethodSite.java:192)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+	at com.resetoter.battleqq.facade.CommandFacade$_useCommand_closure2.doCall(CommandFacade.groovy:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at groovy.lang.Closure.call(Closure.java:430)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2030)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2015)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2068)
+	at org.codehaus.groovy.runtime.dgm$164.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:274)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at com.resetoter.battleqq.facade.CommandFacade.useCommand(CommandFacade.groovy:39)
+	at com.resetoter.battleqq.facade.CommandFacade$useCommand.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)
+	at com.resetoter.battleqq.facade.BattleFacade.onGroupMessage(BattleFacade.groovy:30)
+	at com.resetoter.battleqq.facade.BattleFacade$onGroupMessage.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)
+	at com.resetoter.smartqq.callback.battle.BattleCallback.onGroupMessage(BattleCallback.groovy:29)
+	at com.resetoter.smartqq.callback.MessageCallback$onGroupMessage.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at com.resetoter.smartqq.callback.MessageCallback$onGroupMessage.call(Unknown Source)
+	at com.resetoter.smartqq.facade.MessageCallbackFacade$_onGroupMessage_closure3.doCall(MessageCallbackFacade.groovy:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at org.codehaus.groovy.runtime.ConvertedClosure.invokeCustom(ConvertedClosure.java:54)
+	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:124)
+	... 43 more
+Caused by: groovy.lang.MissingMethodException: No signature of method: com.resetoter.battleqq.logic.MagicBattle.checkBattle() is applicable for argument types: (com.resetoter.smartqq.client.SmartQQClient, com.resetoter.smartqq.model.GroupMessage, java.lang.String, java.lang.String) values: [com.resetoter.smartqq.client.SmartQQClient@5d71be4f, com.resetoter.smartqq.model.GroupMessage@34dffca7, ...]
+Possible solutions: checkBattle()
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:58)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:81)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:190)
+	at com.resetoter.battleqq.logic.PlayerBattle.battle(PlayerBattle.groovy:61)
+	at com.resetoter.battleqq.logic.PlayerBattle$battle.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:117)
+	at com.resetoter.battleqq.facade.CommandFacade.MagicBattle(CommandFacade.groovy:67)
+	... 102 more
+[DEBUG] [Thread-1] 05-18 23:14:09,627 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:14:19,632 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:14:27,479 [MessageCallbackFacade] - onGroupMessage：["face",5]["face",5]["face",5]
+[DEBUG] [Thread-1] 05-18 23:14:27,480 [SmartQQClient] - 开始获取群资料
+[DEBUG] [Thread-1] 05-18 23:14:29,643 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:14:39,645 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:14:43,126 [MessageCallbackFacade] - onGroupMessage：。
+[DEBUG] [Thread-1] 05-18 23:14:43,466 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:14:47,309 [MessageCallbackFacade] - onGroupMessage：你不是南航
+[DEBUG] [Thread-1] 05-18 23:14:47,715 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:14:49,760 [MessageCallbackFacade] - onGroupMessage：哭个软
+[DEBUG] [Thread-1] 05-18 23:14:50,159 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:14:57,972 [MessageCallbackFacade] - onGroupMessage：。
+[DEBUG] [Thread-1] 05-18 23:14:58,323 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:14:58,530 [MessageCallbackFacade] - onGroupMessage：。
+[DEBUG] [Thread-1] 05-18 23:14:58,810 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:16:29,973 [SmartQQClient] - 开始获取好友列表
+[DEBUG] [Thread-1] 05-18 23:16:30,256 [SmartQQClient] - 开始获取群列表
+[DEBUG] [Thread-1] 05-18 23:16:30,484 [SmartQQClient] - 开始获取讨论组列表
+[INFO] [Thread-1] 05-18 23:16:30,744 [Receiver] - 映射完成
+[INFO] [Thread-1] 05-18 23:16:30,746 [MessageCallbackFacade] - onGroupMessage：要么。。。
+[DEBUG] [Thread-1] 05-18 23:16:30,758 [SmartQQClient] - 开始获取群资料
+[DEBUG] [Thread-1] 05-18 23:16:32,937 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:16:33,141 [MessageCallbackFacade] - onGroupMessage：川妹儿腿不错哦
+[DEBUG] [Thread-1] 05-18 23:16:33,438 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:16:33,660 [MessageCallbackFacade] - onGroupMessage：。
+[DEBUG] [Thread-1] 05-18 23:16:33,949 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:16:34,140 [MessageCallbackFacade] - onGroupMessage：you mean
+[DEBUG] [Thread-1] 05-18 23:16:34,434 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:16:34,698 [MessageCallbackFacade] - onGroupMessage：taiwan不是鹁鸽提出来的
+[DEBUG] [Thread-1] 05-18 23:16:35,038 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:16:35,231 [MessageCallbackFacade] - onGroupMessage：啊；
+[DEBUG] [Thread-1] 05-18 23:16:35,536 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:16:35,693 [MessageCallbackFacade] - onGroupMessage：我随便提提
+[DEBUG] [Thread-1] 05-18 23:16:35,973 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:16:36,125 [MessageCallbackFacade] - onGroupMessage：噶么台
+[DEBUG] [Thread-1] 05-18 23:16:36,444 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:16:36,620 [MessageCallbackFacade] - onGroupMessage：["face",181]
+[DEBUG] [Thread-1] 05-18 23:16:36,898 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:16:37,094 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@爱酱 
+[DEBUG] [Thread-1] 05-18 23:16:37,095 [SmartQQClient] - 开始获取群资料
+[ERROR] [Thread-1] 05-18 23:16:40,525 [MessageCallbackFacade] - 请求失败，Api返回码[100003]
+net.dongliu.requests.exception.RequestException: 请求失败，Api返回码[100003]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at com.resetoter.smartqq.client.SmartQQClient.getResponseJson(SmartQQClient.groovy:676)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite$StaticMetaMethodSiteNoUnwrapNoCoerce.invoke(StaticMetaMethodSite.java:151)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite.callStatic(StaticMetaMethodSite.java:102)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:206)
+	at com.resetoter.smartqq.client.SmartQQClient.getJsonObjectResult(SmartQQClient.groovy:636)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite$StaticMetaMethodSiteNoUnwrapNoCoerce.invoke(StaticMetaMethodSite.java:151)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite.callStatic(StaticMetaMethodSite.java:102)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:206)
+	at com.resetoter.smartqq.client.SmartQQClient.getGroupInfo(SmartQQClient.groovy:538)
+	at com.resetoter.smartqq.client.SmartQQClient$getGroupInfo$4.call(Unknown Source)
+	at com.resetoter.smartqq.facade.Receiver.getGroupInfoFromID(Receiver.groovy:67)
+	at com.resetoter.smartqq.facade.Receiver$getGroupInfoFromID$1.callCurrent(Unknown Source)
+	at com.resetoter.smartqq.facade.Receiver.getGroupUserNick(Receiver.groovy:148)
+	at com.resetoter.smartqq.facade.Receiver$getGroupUserNick$0.call(Unknown Source)
+	at com.resetoter.smartqq.callback.turning.TurningCommon.ResponseGroup(TurningCommon.groovy:29)
+	at com.resetoter.smartqq.callback.turning.TurningCommon$ResponseGroup.call(Unknown Source)
+	at com.resetoter.smartqq.callback.turning.TurningCallback.onGroupMessage(TurningCallback.groovy:24)
+	at com.resetoter.smartqq.callback.MessageCallback$onGroupMessage.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at com.resetoter.smartqq.callback.MessageCallback$onGroupMessage.call(Unknown Source)
+	at com.resetoter.smartqq.facade.MessageCallbackFacade$_onGroupMessage_closure3.doCall(MessageCallbackFacade.groovy:65)
+	at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at org.codehaus.groovy.runtime.ConvertedClosure.invokeCustom(ConvertedClosure.java:54)
+	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:124)
+	at com.sun.proxy.$Proxy19.accept(Unknown Source)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrap.invoke(PojoMetaMethodSite.java:213)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at com.resetoter.smartqq.facade.MessageCallbackFacade.onGroupMessage(MessageCallbackFacade.groovy:64)
+	at com.resetoter.smartqq.callback.MessageCallback$onGroupMessage.call(Unknown Source)
+	at com.resetoter.smartqq.client.SmartQQClient.pollMessage(SmartQQClient.groovy:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:384)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:69)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at com.resetoter.smartqq.client.SmartQQClient$_closure1.doCall(SmartQQClient.groovy:77)
+	at com.resetoter.smartqq.client.SmartQQClient$_closure1.doCall(SmartQQClient.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at groovy.lang.Closure.call(Closure.java:408)
+	at groovy.lang.Closure.run(Closure.java:495)
+	at java.lang.Thread.run(Thread.java:748)
+[DEBUG] [Thread-1] 05-18 23:16:40,534 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:16:40,791 [MessageCallbackFacade] - onGroupMessage：我看我们
+[DEBUG] [Thread-1] 05-18 23:16:41,056 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:16:41,257 [MessageCallbackFacade] - onGroupMessage：你们有没有别的想法
+[DEBUG] [Thread-1] 05-18 23:16:41,627 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:16:42,576 [MessageCallbackFacade] - onGroupMessage：也ok
+[DEBUG] [Thread-1] 05-18 23:16:42,912 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:16:43,563 [MessageCallbackFacade] - onGroupMessage：西沙群岛
+[DEBUG] [Thread-1] 05-18 23:16:43,902 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:16:45,751 [MessageCallbackFacade] - onGroupMessage：你不要说
+[DEBUG] [Thread-1] 05-18 23:16:46,049 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:16:46,735 [MessageCallbackFacade] - onGroupMessage：又
+[DEBUG] [Thread-1] 05-18 23:16:47,011 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:16:50,911 [MessageCallbackFacade] - onGroupMessage：笑死
+[DEBUG] [Thread-1] 05-18 23:16:51,223 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:16:52,423 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@爱酱 
+[DEBUG] [Thread-1] 05-18 23:16:52,423 [SmartQQClient] - 开始获取群资料
+[DEBUG] [Thread-1] 05-18 23:16:52,841 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-18 23:16:53,311 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-18 23:16:53,448 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-18 23:16:53,661 [SmartQQClient] - 发送成功
+[ERROR] [Thread-1] 05-18 23:16:53,663 [MessageCallbackFacade] - 
+java.lang.reflect.UndeclaredThrowableException
+	at com.sun.proxy.$Proxy19.accept(Unknown Source)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at sun.reflect.GeneratedMethodAccessor25.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrap.invoke(PojoMetaMethodSite.java:213)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at com.resetoter.smartqq.facade.MessageCallbackFacade.onGroupMessage(MessageCallbackFacade.groovy:64)
+	at com.resetoter.smartqq.callback.MessageCallback$onGroupMessage.call(Unknown Source)
+	at com.resetoter.smartqq.client.SmartQQClient.pollMessage(SmartQQClient.groovy:242)
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:384)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:69)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at com.resetoter.smartqq.client.SmartQQClient$_closure1.doCall(SmartQQClient.groovy:77)
+	at com.resetoter.smartqq.client.SmartQQClient$_closure1.doCall(SmartQQClient.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at groovy.lang.Closure.call(Closure.java:408)
+	at groovy.lang.Closure.run(Closure.java:495)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSite.invoke(PojoMetaMethodSite.java:192)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+	at com.resetoter.battleqq.facade.CommandFacade$_useCommand_closure2.doCall(CommandFacade.groovy:41)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at groovy.lang.Closure.call(Closure.java:430)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2030)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2015)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2068)
+	at org.codehaus.groovy.runtime.dgm$164.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:274)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at com.resetoter.battleqq.facade.CommandFacade.useCommand(CommandFacade.groovy:39)
+	at com.resetoter.battleqq.facade.CommandFacade$useCommand.call(Unknown Source)
+	at com.resetoter.battleqq.facade.BattleFacade.onGroupMessage(BattleFacade.groovy:30)
+	at com.resetoter.battleqq.facade.BattleFacade$onGroupMessage.call(Unknown Source)
+	at com.resetoter.smartqq.callback.battle.BattleCallback.onGroupMessage(BattleCallback.groovy:29)
+	at com.resetoter.smartqq.callback.MessageCallback$onGroupMessage.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at com.resetoter.smartqq.callback.MessageCallback$onGroupMessage.call(Unknown Source)
+	at com.resetoter.smartqq.facade.MessageCallbackFacade$_onGroupMessage_closure3.doCall(MessageCallbackFacade.groovy:65)
+	at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at org.codehaus.groovy.runtime.ConvertedClosure.invokeCustom(ConvertedClosure.java:54)
+	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:124)
+	... 34 more
+Caused by: java.lang.NullPointerException: Cannot invoke method getHp() on null object
+	at org.codehaus.groovy.runtime.NullObject.invokeMethod(NullObject.java:91)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.NullCallSite.call(NullCallSite.java:35)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at com.resetoter.battleqq.mybatis.model.PlayerInfo$getHp.call(Unknown Source)
+	at com.resetoter.battleqq.Entity.Player.getHp(Player.groovy:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.getProperty(MetaClassImpl.java:1855)
+	at groovy.lang.ExpandoMetaClass.getProperty(ExpandoMetaClass.java:1155)
+	at groovy.lang.MetaClassImpl.getProperty(MetaClassImpl.java:3763)
+	at groovy.lang.ExpandoMetaClass.getProperty(ExpandoMetaClass.java:1167)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassGetPropertySite.getProperty(PogoMetaClassGetPropertySite.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:307)
+	at com.resetoter.battleqq.logic.PlayerBattle.checkBattle(PlayerBattle.groovy:138)
+	at com.resetoter.battleqq.logic.PlayerBattle.battle(PlayerBattle.groovy:61)
+	at com.resetoter.battleqq.logic.PlayerBattle$battle.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:117)
+	at com.resetoter.battleqq.facade.CommandFacade.MagicBattle(CommandFacade.groovy:67)
+	... 83 more
+[DEBUG] [Thread-1] 05-18 23:16:53,677 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:16:56,040 [MessageCallbackFacade] - onGroupMessage：["face",176]
+[DEBUG] [Thread-1] 05-18 23:16:56,302 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:17:06,306 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:17:16,444 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:17:26,604 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:17:36,741 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:17:46,828 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:17:51,539 [MessageCallbackFacade] - onGroupMessage：跟爸妈说出去玩
+[DEBUG] [Thread-1] 05-18 23:17:51,857 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:17:59,698 [MessageCallbackFacade] - onGroupMessage：棋牌室打了一个礼拜麻将
+[DEBUG] [Thread-1] 05-18 23:17:59,990 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:18:01,921 [MessageCallbackFacade] - onGroupMessage：成了
+[DEBUG] [Thread-1] 05-18 23:18:02,222 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:18:06,173 [MessageCallbackFacade] - onGroupMessage：笑死
+[DEBUG] [Thread-1] 05-18 23:18:06,420 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:18:12,342 [MessageCallbackFacade] - onGroupMessage：出来裤子都没了
+[DEBUG] [Thread-1] 05-18 23:18:12,640 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:18:21,130 [MessageCallbackFacade] - onGroupMessage：跟你们打
+[DEBUG] [Thread-1] 05-18 23:18:21,377 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:18:22,734 [MessageCallbackFacade] - onGroupMessage：还是稳的
+[DEBUG] [Thread-1] 05-18 23:18:23,042 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:18:33,043 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:18:43,216 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:18:47,053 [MessageCallbackFacade] - onGroupMessage：国粹啊
+[DEBUG] [Thread-1] 05-18 23:18:47,298 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:18:48,408 [MessageCallbackFacade] - onGroupMessage：好好学
+[DEBUG] [Thread-1] 05-18 23:18:48,758 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:18:58,759 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:19:08,848 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:19:11,875 [MessageCallbackFacade] - onGroupMessage：吸毒配
+[DEBUG] [Thread-1] 05-18 23:19:12,207 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:19:22,165 [MessageCallbackFacade] - onGroupMessage：吸毒配
+[DEBUG] [Thread-1] 05-18 23:19:22,385 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:19:32,386 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:19:42,492 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:19:52,162 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@爱酱 
+[DEBUG] [Thread-1] 05-18 23:19:52,297 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-18 23:19:52,501 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-18 23:20:12,584 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-18 23:20:12,851 [SmartQQClient] - 发送成功
+[ERROR] [Thread-1] 05-18 23:20:15,117 [MessageCallbackFacade] - 
+java.lang.reflect.UndeclaredThrowableException
+	at com.sun.proxy.$Proxy19.accept(Unknown Source)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at sun.reflect.GeneratedMethodAccessor25.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrap.invoke(PojoMetaMethodSite.java:213)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at com.resetoter.smartqq.facade.MessageCallbackFacade.onGroupMessage(MessageCallbackFacade.groovy:64)
+	at com.resetoter.smartqq.callback.MessageCallback$onGroupMessage.call(Unknown Source)
+	at com.resetoter.smartqq.client.SmartQQClient.pollMessage(SmartQQClient.groovy:242)
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:384)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:69)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at com.resetoter.smartqq.client.SmartQQClient$_closure1.doCall(SmartQQClient.groovy:77)
+	at com.resetoter.smartqq.client.SmartQQClient$_closure1.doCall(SmartQQClient.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at groovy.lang.Closure.call(Closure.java:408)
+	at groovy.lang.Closure.run(Closure.java:495)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSite.invoke(PojoMetaMethodSite.java:192)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+	at com.resetoter.battleqq.facade.CommandFacade$_useCommand_closure2.doCall(CommandFacade.groovy:41)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at groovy.lang.Closure.call(Closure.java:430)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2030)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2015)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2068)
+	at org.codehaus.groovy.runtime.dgm$164.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:274)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at com.resetoter.battleqq.facade.CommandFacade.useCommand(CommandFacade.groovy:39)
+	at com.resetoter.battleqq.facade.CommandFacade$useCommand.call(Unknown Source)
+	at com.resetoter.battleqq.facade.BattleFacade.onGroupMessage(BattleFacade.groovy:30)
+	at com.resetoter.battleqq.facade.BattleFacade$onGroupMessage.call(Unknown Source)
+	at com.resetoter.smartqq.callback.battle.BattleCallback.onGroupMessage(BattleCallback.groovy:29)
+	at com.resetoter.smartqq.callback.MessageCallback$onGroupMessage.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at com.resetoter.smartqq.callback.MessageCallback$onGroupMessage.call(Unknown Source)
+	at com.resetoter.smartqq.facade.MessageCallbackFacade$_onGroupMessage_closure3.doCall(MessageCallbackFacade.groovy:65)
+	at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at org.codehaus.groovy.runtime.ConvertedClosure.invokeCustom(ConvertedClosure.java:54)
+	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:124)
+	... 34 more
+Caused by: java.lang.NullPointerException: Cannot invoke method getHp() on null object
+	at org.codehaus.groovy.runtime.NullObject.invokeMethod(NullObject.java:91)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.NullCallSite.call(NullCallSite.java:35)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:117)
+	at com.resetoter.battleqq.Entity.Player.getHp(Player.groovy:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.getProperty(MetaClassImpl.java:1855)
+	at groovy.lang.ExpandoMetaClass.getProperty(ExpandoMetaClass.java:1155)
+	at groovy.lang.MetaClassImpl.getProperty(MetaClassImpl.java:3763)
+	at groovy.lang.ExpandoMetaClass.getProperty(ExpandoMetaClass.java:1167)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassGetPropertySite.getProperty(PogoMetaClassGetPropertySite.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:307)
+	at com.resetoter.battleqq.logic.PlayerBattle.checkBattle(PlayerBattle.groovy:138)
+	at com.resetoter.battleqq.logic.PlayerBattle.battle(PlayerBattle.groovy:61)
+	at com.resetoter.battleqq.logic.PlayerBattle$battle.call(Unknown Source)
+	at com.resetoter.battleqq.facade.CommandFacade.MagicBattle(CommandFacade.groovy:67)
+	... 81 more
+[DEBUG] [Thread-1] 05-18 23:20:15,120 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:20:15,301 [MessageCallbackFacade] - onGroupMessage：本校人均吸毒配
+[DEBUG] [Thread-1] 05-18 23:20:15,588 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:20:15,828 [MessageCallbackFacade] - onGroupMessage：昨天他们打台球
+[DEBUG] [Thread-1] 05-18 23:20:16,101 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:20:18,253 [MessageCallbackFacade] - onGroupMessage：还他妈打钱
+[DEBUG] [Thread-1] 05-18 23:20:18,586 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:20:28,587 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:20:29,449 [MessageCallbackFacade] - onGroupMessage：一盘十块
+[DEBUG] [Thread-1] 05-18 23:20:29,748 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:20:36,334 [MessageCallbackFacade] - onGroupMessage：一个哈皮被带秀
+[DEBUG] [Thread-1] 05-18 23:20:36,629 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:20:43,218 [MessageCallbackFacade] - onGroupMessage：不玩钱的时候连赢两把
+[DEBUG] [Thread-1] 05-18 23:20:43,556 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:20:47,871 [MessageCallbackFacade] - onGroupMessage：膨胀了说打钱
+[DEBUG] [Thread-1] 05-18 23:20:48,186 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:20:54,983 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@爱酱 
+[DEBUG] [Thread-1] 05-18 23:21:01,901 [SmartQQClient] - 开始发送群消息
+[ERROR] [Thread-1] 05-18 23:21:02,863 [SmartQQClient] - 发送失败，Api返回码[1202]
+[ERROR] [Thread-1] 05-18 23:22:16,367 [MessageCallbackFacade] - Cannot get property 'working' on null object
+java.lang.NullPointerException: Cannot get property 'working' on null object
+	at org.codehaus.groovy.runtime.NullObject.getProperty(NullObject.java:60)
+	at org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:174)
+	at org.codehaus.groovy.runtime.callsite.NullCallSite.getProperty(NullCallSite.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGetProperty(AbstractCallSite.java:296)
+	at com.resetoter.smartqq.facade.MessageCallbackFacade.onGroupMessage(MessageCallbackFacade.groovy:60)
+	at com.resetoter.smartqq.callback.MessageCallback$onGroupMessage.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at com.resetoter.smartqq.client.SmartQQClient.pollMessage(SmartQQClient.groovy:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:384)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:69)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at com.resetoter.smartqq.client.SmartQQClient$_closure1.doCall(SmartQQClient.groovy:77)
+	at com.resetoter.smartqq.client.SmartQQClient$_closure1.doCall(SmartQQClient.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at groovy.lang.Closure.call(Closure.java:408)
+	at groovy.lang.Closure.run(Closure.java:495)
+	at java.lang.Thread.run(Thread.java:748)
+[DEBUG] [Thread-1] 05-18 23:22:16,372 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:22:16,585 [SmartQQClient] - 开始获取好友列表
+[DEBUG] [Thread-1] 05-18 23:22:16,948 [SmartQQClient] - 开始获取群列表
+[DEBUG] [Thread-1] 05-18 23:22:17,189 [SmartQQClient] - 开始获取讨论组列表
+[INFO] [Thread-1] 05-18 23:22:17,367 [Receiver] - 映射完成
+[INFO] [Thread-1] 05-18 23:22:17,369 [MessageCallbackFacade] - onGroupMessage：笑死
+[DEBUG] [Thread-1] 05-18 23:22:17,383 [SmartQQClient] - 开始获取群资料
+[DEBUG] [Thread-1] 05-18 23:22:19,490 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:22:19,702 [MessageCallbackFacade] - onGroupMessage：你们欧碟
+[DEBUG] [Thread-1] 05-18 23:22:20,033 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:22:20,777 [MessageCallbackFacade] - onGroupMessage：哇
+[DEBUG] [Thread-1] 05-18 23:22:21,077 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:22:24,774 [MessageCallbackFacade] - onGroupMessage：泽锋麻麻不来批评下
+[DEBUG] [Thread-1] 05-18 23:22:25,096 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:22:27,238 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@爱酱 
+[DEBUG] [Thread-1] 05-18 23:22:27,238 [SmartQQClient] - 开始获取群资料
+[DEBUG] [Thread-1] 05-18 23:22:31,477 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-18 23:22:31,869 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-18 23:22:36,665 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:22:36,830 [MessageCallbackFacade] - onGroupMessage：索尼新出的那款手机
+[DEBUG] [Thread-1] 05-18 23:22:37,060 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:22:37,259 [MessageCallbackFacade] - onGroupMessage：怎么样啊
+[DEBUG] [Thread-1] 05-18 23:22:37,574 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:22:37,795 [MessageCallbackFacade] - onGroupMessage：Xperia™ XZ Premium
+[DEBUG] [Thread-1] 05-18 23:22:38,117 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:22:38,411 [MessageCallbackFacade] - onGroupMessage：ugly
+[DEBUG] [Thread-1] 05-18 23:22:38,885 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:22:41,008 [MessageCallbackFacade] - onGroupMessage：丑的批爆
+[DEBUG] [Thread-1] 05-18 23:22:41,443 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:22:46,607 [MessageCallbackFacade] - onGroupMessage：你稳住
+[DEBUG] [Thread-1] 05-18 23:22:47,001 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:22:55,407 [MessageCallbackFacade] - onGroupMessage：笑死
+[DEBUG] [Thread-1] 05-18 23:22:55,882 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:22:58,170 [MessageCallbackFacade] - onGroupMessage：只是问一下！
+[DEBUG] [Thread-1] 05-18 23:22:58,604 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:23:03,838 [MessageCallbackFacade] - onGroupMessage：看了下配置很不错
+[DEBUG] [Thread-1] 05-18 23:23:04,206 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:23:14,210 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:23:20,235 [MessageCallbackFacade] - onGroupMessage：索尼
+[DEBUG] [Thread-1] 05-18 23:23:20,584 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:23:20,772 [MessageCallbackFacade] - onGroupMessage：还是HTC U11好看
+[DEBUG] [Thread-1] 05-18 23:23:21,110 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:23:26,577 [MessageCallbackFacade] - onGroupMessage：国行还是算了
+[DEBUG] [Thread-1] 05-18 23:23:26,852 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:23:34,404 [MessageCallbackFacade] - onGroupMessage：用索尼的都是肥宅
+[DEBUG] [Thread-1] 05-18 23:23:34,796 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:23:35,869 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@牛
+[DEBUG] [Thread-1] 05-18 23:23:36,118 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-18 23:23:36,385 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-18 23:23:36,663 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:23:46,664 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:23:56,813 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:24:01,734 [MessageCallbackFacade] - onGroupMessage：我买索尼的同学
+[DEBUG] [Thread-1] 05-18 23:24:02,024 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:24:04,176 [MessageCallbackFacade] - onGroupMessage：现在都换机了
+[DEBUG] [Thread-1] 05-18 23:24:04,547 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:24:04,791 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@系统消息
+[DEBUG] [Thread-1] 05-18 23:24:04,917 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-18 23:24:05,131 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-18 23:24:05,456 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:24:11,218 [MessageCallbackFacade] - onGroupMessage：破到不能用
+[DEBUG] [Thread-1] 05-18 23:24:11,462 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:24:21,463 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:24:31,617 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:24:41,072 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@牛 
+[DEBUG] [Thread-1] 05-18 23:24:41,227 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-18 23:24:41,441 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-18 23:24:41,731 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:25:10,650 [SmartQQClient] - 开始获取好友列表
+[DEBUG] [Thread-1] 05-18 23:25:10,897 [SmartQQClient] - 开始获取群列表
+[DEBUG] [Thread-1] 05-18 23:25:11,105 [SmartQQClient] - 开始获取讨论组列表
+[INFO] [Thread-1] 05-18 23:25:11,349 [Receiver] - 映射完成
+[INFO] [Thread-1] 05-18 23:25:11,350 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@牛 
+[DEBUG] [Thread-1] 05-18 23:25:11,363 [SmartQQClient] - 开始获取群资料
+[DEBUG] [Thread-1] 05-18 23:25:13,260 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-18 23:25:13,503 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-18 23:25:13,879 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:25:16,057 [MessageCallbackFacade] - onGroupMessage：边框窄一点感觉还可以
+[DEBUG] [Thread-1] 05-18 23:25:16,057 [SmartQQClient] - 开始获取群资料
+[DEBUG] [Thread-1] 05-18 23:25:17,013 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:25:27,018 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:25:31,433 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@牛 
+[DEBUG] [Thread-1] 05-18 23:25:31,792 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-18 23:25:32,033 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-18 23:25:32,427 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:25:35,595 [MessageCallbackFacade] - onGroupMessage：。。。。。
+[DEBUG] [Thread-1] 05-18 23:25:36,028 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:25:38,742 [MessageCallbackFacade] - onGroupMessage：复活！
+[DEBUG] [Thread-1] 05-18 23:25:38,979 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-18 23:25:39,174 [SmartQQClient] - 发送成功
+[ERROR] [Thread-1] 05-18 23:25:39,177 [MessageCallbackFacade] - 
+java.lang.reflect.UndeclaredThrowableException
+	at com.sun.proxy.$Proxy19.accept(Unknown Source)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrap.invoke(PojoMetaMethodSite.java:213)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at com.resetoter.smartqq.facade.MessageCallbackFacade.onGroupMessage(MessageCallbackFacade.groovy:64)
+	at com.resetoter.smartqq.callback.MessageCallback$onGroupMessage.call(Unknown Source)
+	at com.resetoter.smartqq.client.SmartQQClient.pollMessage(SmartQQClient.groovy:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:384)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:69)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at com.resetoter.smartqq.client.SmartQQClient$_closure1.doCall(SmartQQClient.groovy:77)
+	at com.resetoter.smartqq.client.SmartQQClient$_closure1.doCall(SmartQQClient.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at groovy.lang.Closure.call(Closure.java:408)
+	at groovy.lang.Closure.run(Closure.java:495)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSite.invoke(PojoMetaMethodSite.java:192)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+	at com.resetoter.battleqq.facade.CommandFacade$_useCommand_closure2.doCall(CommandFacade.groovy:41)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at groovy.lang.Closure.call(Closure.java:430)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2030)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2015)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2068)
+	at org.codehaus.groovy.runtime.dgm$164.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:274)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at com.resetoter.battleqq.facade.CommandFacade.useCommand(CommandFacade.groovy:39)
+	at com.resetoter.battleqq.facade.CommandFacade$useCommand.call(Unknown Source)
+	at com.resetoter.battleqq.facade.BattleFacade.onGroupMessage(BattleFacade.groovy:30)
+	at com.resetoter.battleqq.facade.BattleFacade$onGroupMessage.call(Unknown Source)
+	at com.resetoter.smartqq.callback.battle.BattleCallback.onGroupMessage(BattleCallback.groovy:29)
+	at com.resetoter.smartqq.callback.MessageCallback$onGroupMessage.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at com.resetoter.smartqq.callback.MessageCallback$onGroupMessage.call(Unknown Source)
+	at com.resetoter.smartqq.facade.MessageCallbackFacade$_onGroupMessage_closure3.doCall(MessageCallbackFacade.groovy:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at org.codehaus.groovy.runtime.ConvertedClosure.invokeCustom(ConvertedClosure.java:54)
+	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:124)
+	... 36 more
+Caused by: groovy.lang.MissingMethodException: No signature of method: com.resetoter.battleqq.mybatis.model.PlayerInfo.getMaxHp() is applicable for argument types: () values: []
+Possible solutions: getHp(), setHp(java.lang.Integer), getAt(java.lang.String), getClass(), getDef(), getPoint()
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:58)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaClassSite.call(PojoMetaClassSite.java:49)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:117)
+	at com.resetoter.battleqq.facade.CommandFacade.ReBorn(CommandFacade.groovy:95)
+	... 84 more
+[DEBUG] [Thread-1] 05-18 23:25:39,188 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:25:45,653 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@牛 
+[DEBUG] [Thread-1] 05-18 23:25:45,757 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-18 23:25:45,938 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-18 23:25:46,192 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:25:56,193 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:25:56,612 [MessageCallbackFacade] - onGroupMessage：你可真是个弱智
+[DEBUG] [Thread-1] 05-18 23:25:56,932 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:26:00,212 [MessageCallbackFacade] - onGroupMessage：。
+[DEBUG] [Thread-1] 05-18 23:26:00,504 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:26:06,749 [MessageCallbackFacade] - onGroupMessage：nmzl
+[DEBUG] [Thread-1] 05-18 23:26:07,065 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:26:07,923 [MessageCallbackFacade] - onGroupMessage：笑死
+[DEBUG] [Thread-1] 05-18 23:26:08,230 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:26:11,887 [MessageCallbackFacade] - onGroupMessage：笑死
+[DEBUG] [Thread-1] 05-18 23:26:12,184 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:26:22,185 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:26:32,258 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:26:42,335 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:26:45,019 [MessageCallbackFacade] - onGroupMessage：睿智
+[DEBUG] [Thread-1] 05-18 23:26:45,305 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:26:46,237 [MessageCallbackFacade] - onGroupMessage：试一试。。
+[DEBUG] [Thread-1] 05-18 23:26:46,521 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:26:51,379 [MessageCallbackFacade] - onGroupMessage：逼文要么等下一代pixel
+[DEBUG] [Thread-1] 05-18 23:26:51,635 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:27:01,457 [MessageCallbackFacade] - onGroupMessage：好像LG代工
+[DEBUG] [Thread-1] 05-18 23:27:01,742 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:27:11,744 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:27:21,829 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:27:31,949 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:27:42,152 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:27:47,701 [MessageCallbackFacade] - onGroupMessage：算了吧
+[DEBUG] [Thread-1] 05-18 23:27:47,946 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:27:57,947 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:28:08,018 [SmartQQClient] - 开始接收消息
+[INFO] [main] 05-18 23:28:22,423 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-18 23:28:22,433 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
+[DEBUG] [main] 05-18 23:28:22,898 [SmartQQClient] - 开始获取二维码
+[INFO] [main] 05-18 23:28:23,743 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
+[DEBUG] [main] 05-18 23:28:23,743 [SmartQQClient] - 等待扫描二维码
+[INFO] [main] 05-18 23:29:32,002 [SmartQQClient] - 正在登录，请稍后
+[DEBUG] [main] 05-18 23:29:32,002 [SmartQQClient] - 开始获取ptwebqq
+[DEBUG] [main] 05-18 23:29:32,846 [SmartQQClient] - 开始获取vfwebqq
+[DEBUG] [main] 05-18 23:29:33,420 [SmartQQClient] - 开始获取uin和psessionid
+[DEBUG] [main] 05-18 23:29:33,798 [SmartQQClient] - 开始获取好友状态
+[DEBUG] [main] 05-18 23:29:34,017 [SmartQQClient] - 开始获取登录用户信息
+[INFO] [main] 05-18 23:29:34,279 [SmartQQClient] - AI！，欢迎！
+[DEBUG] [Thread-1] 05-18 23:29:34,283 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:29:34,564 [SmartQQClient] - 开始获取好友列表
+[DEBUG] [Thread-1] 05-18 23:29:34,841 [SmartQQClient] - 开始获取群列表
+[DEBUG] [Thread-1] 05-18 23:29:35,119 [SmartQQClient] - 开始获取讨论组列表
+[INFO] [Thread-1] 05-18 23:29:35,319 [Receiver] - 映射完成
+[INFO] [Thread-1] 05-18 23:29:35,320 [MessageCallbackFacade] - onGroupMessage：为甚么要买原生
+[DEBUG] [Thread-1] 05-18 23:29:35,331 [SmartQQClient] - 开始获取群资料
+[DEBUG] [Thread-1] 05-18 23:29:38,099 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:29:38,361 [MessageCallbackFacade] - onGroupMessage：公积金
+[DEBUG] [Thread-1] 05-18 23:29:38,361 [SmartQQClient] - 开始获取群资料
+[DEBUG] [Thread-1] 05-18 23:29:39,192 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-18 23:29:39,467 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-18 23:29:39,467 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:29:39,693 [MessageCallbackFacade] - onGroupMessage：不原生不太好用
+[DEBUG] [Thread-1] 05-18 23:29:40,027 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:29:44,228 [MessageCallbackFacade] - onGroupMessage：用原生的占比有没有百分之1
+[DEBUG] [Thread-1] 05-18 23:29:44,611 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:29:54,617 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:30:04,774 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:30:08,661 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@巧克力 
+[DEBUG] [Thread-1] 05-18 23:30:08,813 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-18 23:30:09,460 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-18 23:30:09,813 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:30:19,814 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:30:30,081 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:30:40,189 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:30:50,383 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:30:57,630 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@巧克力 
+[INFO] [main] 05-18 23:32:11,046 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-18 23:32:11,054 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
+[DEBUG] [main] 05-18 23:32:11,483 [SmartQQClient] - 开始获取二维码
+[INFO] [main] 05-18 23:32:13,073 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
+[DEBUG] [main] 05-18 23:32:13,073 [SmartQQClient] - 等待扫描二维码
+[INFO] [main] 05-18 23:32:22,094 [SmartQQClient] - 正在登录，请稍后
+[DEBUG] [main] 05-18 23:32:22,094 [SmartQQClient] - 开始获取ptwebqq
+[DEBUG] [main] 05-18 23:32:23,055 [SmartQQClient] - 开始获取vfwebqq
+[DEBUG] [main] 05-18 23:32:23,432 [SmartQQClient] - 开始获取uin和psessionid
+[DEBUG] [main] 05-18 23:32:23,774 [SmartQQClient] - 开始获取好友状态
+[DEBUG] [main] 05-18 23:32:24,038 [SmartQQClient] - 开始获取登录用户信息
+[INFO] [main] 05-18 23:32:24,269 [SmartQQClient] - AI！，欢迎！
+[DEBUG] [Thread-1] 05-18 23:32:24,273 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:32:24,576 [SmartQQClient] - 开始获取好友列表
+[DEBUG] [Thread-1] 05-18 23:32:24,821 [SmartQQClient] - 开始获取群列表
+[DEBUG] [Thread-1] 05-18 23:32:25,054 [SmartQQClient] - 开始获取讨论组列表
+[INFO] [Thread-1] 05-18 23:32:25,253 [Receiver] - 映射完成
+[INFO] [Thread-1] 05-18 23:32:25,254 [MessageCallbackFacade] - onGroupMessage：估计差不多
+[DEBUG] [Thread-1] 05-18 23:32:25,264 [SmartQQClient] - 开始获取群资料
+[DEBUG] [Thread-1] 05-18 23:32:27,847 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:32:28,035 [MessageCallbackFacade] - onGroupMessage：笑死
+[DEBUG] [Thread-1] 05-18 23:32:28,324 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:32:28,547 [MessageCallbackFacade] - onGroupMessage：不等了
+[DEBUG] [Thread-1] 05-18 23:32:28,838 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:32:28,990 [MessageCallbackFacade] - onGroupMessage：我还是se用用
+[DEBUG] [Thread-1] 05-18 23:32:29,334 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:32:29,510 [MessageCallbackFacade] - onGroupMessage：中国估计没有
+[DEBUG] [Thread-1] 05-18 23:32:29,755 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:32:32,359 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@巧克力 
+[DEBUG] [Thread-1] 05-18 23:32:32,359 [SmartQQClient] - 开始获取群资料
+[DEBUG] [Thread-1] 05-18 23:32:48,613 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-18 23:32:48,858 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-18 23:32:49,176 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:32:49,346 [MessageCallbackFacade] - onGroupMessage：买个锤子
+[DEBUG] [Thread-1] 05-18 23:32:49,635 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:32:49,865 [MessageCallbackFacade] - onGroupMessage：天生骄傲
+[DEBUG] [Thread-1] 05-18 23:32:50,216 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:32:50,489 [MessageCallbackFacade] - onGroupMessage：就是se 32 64G的
+[DEBUG] [Thread-1] 05-18 23:32:50,760 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:32:50,978 [MessageCallbackFacade] - onGroupMessage：太少了
+[DEBUG] [Thread-1] 05-18 23:32:51,316 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:32:52,016 [MessageCallbackFacade] - onGroupMessage：京东经常没货
+[DEBUG] [Thread-1] 05-18 23:32:52,275 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:32:59,340 [MessageCallbackFacade] - onGroupMessage：设个提醒
+[DEBUG] [Thread-1] 05-18 23:32:59,637 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:33:09,364 [MessageCallbackFacade] - onGroupMessage：怎么跟耳机一样
+[DEBUG] [Thread-1] 05-18 23:33:09,719 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:33:09,959 [MessageCallbackFacade] - onGroupMessage：剁手提醒
+[DEBUG] [Thread-1] 05-18 23:33:10,356 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:33:10,562 [MessageCallbackFacade] - onGroupMessage：。
+[DEBUG] [Thread-1] 05-18 23:33:10,961 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:33:20,966 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:33:26,000 [MessageCallbackFacade] - onGroupMessage：京东卖的便宜吗
+[DEBUG] [Thread-1] 05-18 23:33:26,483 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:33:28,786 [MessageCallbackFacade] - onGroupMessage：国内买不到原生
+[DEBUG] [Thread-1] 05-18 23:33:29,019 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:33:38,051 [MessageCallbackFacade] - onGroupMessage：要么水货
+[DEBUG] [Thread-1] 05-18 23:33:38,344 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:33:39,033 [MessageCallbackFacade] - onGroupMessage：一噶3T！
+[DEBUG] [Thread-1] 05-18 23:33:39,330 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:33:43,177 [MessageCallbackFacade] - onGroupMessage：睿智选择
+[DEBUG] [Thread-1] 05-18 23:33:43,447 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:33:49,954 [MessageCallbackFacade] - onGroupMessage：只能算类原生
+[DEBUG] [Thread-1] 05-18 23:33:50,248 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:33:51,811 [MessageCallbackFacade] - onGroupMessage：京东32G 的3200左右吧
+[DEBUG] [Thread-1] 05-18 23:33:52,087 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:34:00,045 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@巧克力 
+[DEBUG] [Thread-1] 05-18 23:34:00,046 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-18 23:34:00,254 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-18 23:34:00,504 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:34:03,013 [MessageCallbackFacade] - onGroupMessage：反正大部分时间自营都是没货
+[DEBUG] [Thread-1] 05-18 23:34:03,289 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:34:11,175 [MessageCallbackFacade] - onGroupMessage：别的零星有一点
+[DEBUG] [Thread-1] 05-18 23:34:11,480 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:34:18,225 [MessageCallbackFacade] - onGroupMessage：反正就没pixel方便
+[DEBUG] [Thread-1] 05-18 23:34:18,459 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:34:24,962 [MessageCallbackFacade] - onGroupMessage：升级啥的
+[DEBUG] [Thread-1] 05-18 23:34:25,239 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:34:35,240 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:34:38,696 [MessageCallbackFacade] - onGroupMessage：手刷
+[DEBUG] [Thread-1] 05-18 23:34:38,928 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:34:48,929 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:34:58,054 [MessageCallbackFacade] - onGroupMessage：手刷么跟重装系统一样了
+[DEBUG] [Thread-1] 05-18 23:34:58,265 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:35:05,306 [MessageCallbackFacade] - onGroupMessage：pixel有没有ota
+[DEBUG] [Thread-1] 05-18 23:35:05,547 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:35:09,711 [MessageCallbackFacade] - onGroupMessage：有啊
+[DEBUG] [Thread-1] 05-18 23:35:10,008 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:35:10,490 [MessageCallbackFacade] - onGroupMessage：水货的话
+[DEBUG] [Thread-1] 05-18 23:35:10,766 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:35:16,135 [MessageCallbackFacade] - onGroupMessage：应该也有
+[DEBUG] [Thread-1] 05-18 23:35:16,409 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:35:26,411 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:35:36,596 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:35:37,424 [MessageCallbackFacade] - onGroupMessage：摩托现在什么系统啊
+[DEBUG] [Thread-1] 05-18 23:35:37,687 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:35:41,953 [MessageCallbackFacade] - onGroupMessage：倒闭了没有
+[DEBUG] [Thread-1] 05-18 23:35:42,221 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:35:44,456 [MessageCallbackFacade] - onGroupMessage：安卓
+[DEBUG] [Thread-1] 05-18 23:35:44,695 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:35:47,439 [MessageCallbackFacade] - onGroupMessage：半死不活
+[DEBUG] [Thread-1] 05-18 23:35:47,687 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:35:51,379 [MessageCallbackFacade] - onGroupMessage：好像没人买
+[DEBUG] [Thread-1] 05-18 23:35:51,643 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:35:57,868 [MessageCallbackFacade] - onGroupMessage：太丑了还是
+[DEBUG] [Thread-1] 05-18 23:35:58,108 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:36:08,110 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:36:14,282 [MessageCallbackFacade] - onGroupMessage：ov狂多人买
+[DEBUG] [Thread-1] 05-18 23:36:14,587 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:36:24,588 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:36:34,718 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:36:44,840 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:36:52,913 [MessageCallbackFacade] - onGroupMessage：锤子不知道卖的怎么样
+[DEBUG] [Thread-1] 05-18 23:36:53,335 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:37:03,336 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:37:12,776 [MessageCallbackFacade] - onGroupMessage：肯定不行
+[DEBUG] [Thread-1] 05-18 23:37:13,130 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:37:18,541 [MessageCallbackFacade] - onGroupMessage：买的都是弱智
+[DEBUG] [Thread-1] 05-18 23:37:18,829 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:37:24,065 [MessageCallbackFacade] - onGroupMessage：就卖给弱智的
+[DEBUG] [Thread-1] 05-18 23:37:24,334 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:37:34,336 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:37:44,420 [SmartQQClient] - 开始接收消息
+[ERROR] [Thread-1] 05-18 23:37:54,424 [SmartQQClient] - net.dongliu.requests.exception.RequestException: org.apache.http.conn.ConnectTimeoutException: Connect to d1.web2.qq.com:80 [d1.web2.qq.com/182.254.88.155] failed: connect timed out
+[DEBUG] [Thread-1] 05-18 23:37:54,425 [SmartQQClient] - 开始接收消息
+[ERROR] [Thread-1] 05-18 23:38:04,426 [SmartQQClient] - net.dongliu.requests.exception.RequestException: org.apache.http.conn.ConnectTimeoutException: Connect to d1.web2.qq.com:80 [d1.web2.qq.com/182.254.88.155] failed: connect timed out
+[DEBUG] [Thread-1] 05-18 23:38:04,426 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:38:04,800 [SmartQQClient] - 开始获取好友列表
+[DEBUG] [Thread-1] 05-18 23:38:05,149 [SmartQQClient] - 开始获取群列表
+[DEBUG] [Thread-1] 05-18 23:38:05,447 [SmartQQClient] - 开始获取讨论组列表
+[INFO] [Thread-1] 05-18 23:38:05,686 [Receiver] - 映射完成
+[INFO] [Thread-1] 05-18 23:38:05,686 [MessageCallbackFacade] - onGroupMessage：我就看楼镓波买过
+[DEBUG] [Thread-1] 05-18 23:38:05,982 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:38:06,160 [MessageCallbackFacade] - onGroupMessage：。
+[DEBUG] [Thread-1] 05-18 23:38:06,613 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:38:06,786 [MessageCallbackFacade] - onGroupMessage：现实中
+[DEBUG] [Thread-1] 05-18 23:38:07,262 [SmartQQClient] - 开始接收消息
+[INFO] [main] 05-18 23:38:28,871 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-18 23:38:28,882 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
+[DEBUG] [main] 05-18 23:38:29,389 [SmartQQClient] - 开始获取二维码
+[INFO] [main] 05-18 23:38:30,316 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
+[DEBUG] [main] 05-18 23:38:30,317 [SmartQQClient] - 等待扫描二维码
+[INFO] [main] 05-18 23:38:38,044 [SmartQQClient] - 正在登录，请稍后
+[DEBUG] [main] 05-18 23:38:38,044 [SmartQQClient] - 开始获取ptwebqq
+[DEBUG] [main] 05-18 23:38:38,888 [SmartQQClient] - 开始获取vfwebqq
+[DEBUG] [main] 05-18 23:38:39,268 [SmartQQClient] - 开始获取uin和psessionid
+[DEBUG] [main] 05-18 23:38:39,650 [SmartQQClient] - 开始获取好友状态
+[DEBUG] [main] 05-18 23:38:39,896 [SmartQQClient] - 开始获取登录用户信息
+[INFO] [main] 05-18 23:38:40,115 [SmartQQClient] - AI！，欢迎！
+[DEBUG] [Thread-1] 05-18 23:38:40,119 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:38:42,428 [SmartQQClient] - 开始获取好友列表
+[DEBUG] [Thread-1] 05-18 23:38:42,781 [SmartQQClient] - 开始获取群列表
+[DEBUG] [Thread-1] 05-18 23:38:43,053 [SmartQQClient] - 开始获取讨论组列表
+[INFO] [Thread-1] 05-18 23:38:43,252 [Receiver] - 映射完成
+[INFO] [Thread-1] 05-18 23:38:43,253 [MessageCallbackFacade] - onGroupMessage：感觉小米6买的人挺多
+[DEBUG] [Thread-1] 05-18 23:38:43,264 [SmartQQClient] - 开始获取群资料
+[DEBUG] [Thread-1] 05-18 23:38:47,369 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:38:48,388 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@巧克力 
+[DEBUG] [Thread-1] 05-18 23:38:48,388 [SmartQQClient] - 开始获取群资料
+[ERROR] [Thread-1] 05-18 23:38:51,983 [MessageCallbackFacade] - 请求失败，Api返回码[100003]
+net.dongliu.requests.exception.RequestException: 请求失败，Api返回码[100003]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at com.resetoter.smartqq.client.SmartQQClient.getResponseJson(SmartQQClient.groovy:676)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite$StaticMetaMethodSiteNoUnwrapNoCoerce.invoke(StaticMetaMethodSite.java:151)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite.callStatic(StaticMetaMethodSite.java:102)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:206)
+	at com.resetoter.smartqq.client.SmartQQClient.getJsonObjectResult(SmartQQClient.groovy:636)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite$StaticMetaMethodSiteNoUnwrapNoCoerce.invoke(StaticMetaMethodSite.java:151)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite.callStatic(StaticMetaMethodSite.java:102)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:206)
+	at com.resetoter.smartqq.client.SmartQQClient.getGroupInfo(SmartQQClient.groovy:538)
+	at com.resetoter.smartqq.client.SmartQQClient$getGroupInfo$4.call(Unknown Source)
+	at com.resetoter.smartqq.facade.Receiver.getGroupInfoFromID(Receiver.groovy:67)
+	at com.resetoter.smartqq.facade.Receiver$getGroupInfoFromID$1.callCurrent(Unknown Source)
+	at com.resetoter.smartqq.facade.Receiver.getGroupUserNick(Receiver.groovy:148)
+	at com.resetoter.smartqq.facade.Receiver$getGroupUserNick$0.call(Unknown Source)
+	at com.resetoter.smartqq.callback.turning.TurningCommon.ResponseGroup(TurningCommon.groovy:29)
+	at com.resetoter.smartqq.callback.turning.TurningCommon$ResponseGroup.call(Unknown Source)
+	at com.resetoter.smartqq.callback.turning.TurningCallback.onGroupMessage(TurningCallback.groovy:24)
+	at com.resetoter.smartqq.callback.MessageCallback$onGroupMessage.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at com.resetoter.smartqq.callback.MessageCallback$onGroupMessage.call(Unknown Source)
+	at com.resetoter.smartqq.facade.MessageCallbackFacade$_onGroupMessage_closure3.doCall(MessageCallbackFacade.groovy:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at org.codehaus.groovy.runtime.ConvertedClosure.invokeCustom(ConvertedClosure.java:54)
+	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:124)
+	at com.sun.proxy.$Proxy18.accept(Unknown Source)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrap.invoke(PojoMetaMethodSite.java:213)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at com.resetoter.smartqq.facade.MessageCallbackFacade.onGroupMessage(MessageCallbackFacade.groovy:64)
+	at com.resetoter.smartqq.callback.MessageCallback$onGroupMessage.call(Unknown Source)
+	at com.resetoter.smartqq.client.SmartQQClient.pollMessage(SmartQQClient.groovy:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:384)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:69)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at com.resetoter.smartqq.client.SmartQQClient$_closure1.doCall(SmartQQClient.groovy:77)
+	at com.resetoter.smartqq.client.SmartQQClient$_closure1.doCall(SmartQQClient.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at groovy.lang.Closure.call(Closure.java:408)
+	at groovy.lang.Closure.run(Closure.java:495)
+	at java.lang.Thread.run(Thread.java:748)
+[DEBUG] [Thread-1] 05-18 23:38:51,989 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:38:52,205 [MessageCallbackFacade] - onGroupMessage：龙鸣
+[DEBUG] [Thread-1] 05-18 23:38:52,440 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:38:55,425 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@巧克力 
+[DEBUG] [Thread-1] 05-18 23:38:55,425 [SmartQQClient] - 开始获取群资料
+[ERROR] [Thread-1] 05-18 23:38:55,774 [MessageCallbackFacade] - 
+java.lang.reflect.UndeclaredThrowableException
+	at com.sun.proxy.$Proxy18.accept(Unknown Source)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrap.invoke(PojoMetaMethodSite.java:213)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at com.resetoter.smartqq.facade.MessageCallbackFacade.onGroupMessage(MessageCallbackFacade.groovy:64)
+	at com.resetoter.smartqq.callback.MessageCallback$onGroupMessage.call(Unknown Source)
+	at com.resetoter.smartqq.client.SmartQQClient.pollMessage(SmartQQClient.groovy:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:384)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:69)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at com.resetoter.smartqq.client.SmartQQClient$_closure1.doCall(SmartQQClient.groovy:77)
+	at com.resetoter.smartqq.client.SmartQQClient$_closure1.doCall(SmartQQClient.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at groovy.lang.Closure.call(Closure.java:408)
+	at groovy.lang.Closure.run(Closure.java:495)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSite.invoke(PojoMetaMethodSite.java:192)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+	at com.resetoter.battleqq.facade.CommandFacade$_useCommand_closure2.doCall(CommandFacade.groovy:41)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at groovy.lang.Closure.call(Closure.java:430)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2030)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2015)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2068)
+	at org.codehaus.groovy.runtime.dgm$164.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:274)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at com.resetoter.battleqq.facade.CommandFacade.useCommand(CommandFacade.groovy:39)
+	at com.resetoter.battleqq.facade.CommandFacade$useCommand.call(Unknown Source)
+	at com.resetoter.battleqq.facade.BattleFacade.onGroupMessage(BattleFacade.groovy:30)
+	at com.resetoter.battleqq.facade.BattleFacade$onGroupMessage.call(Unknown Source)
+	at com.resetoter.smartqq.callback.battle.BattleCallback.onGroupMessage(BattleCallback.groovy:29)
+	at com.resetoter.smartqq.callback.MessageCallback$onGroupMessage.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at com.resetoter.smartqq.callback.MessageCallback$onGroupMessage.call(Unknown Source)
+	at com.resetoter.smartqq.facade.MessageCallbackFacade$_onGroupMessage_closure3.doCall(MessageCallbackFacade.groovy:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at org.codehaus.groovy.runtime.ConvertedClosure.invokeCustom(ConvertedClosure.java:54)
+	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:124)
+	... 36 more
+Caused by: groovy.lang.GroovyRuntimeException: Ambiguous method overloading for method java.util.Properties#load.
+Cannot resolve which method to invoke for [null] due to overlapping prototypes between:
+	[class java.io.InputStream]
+	[class java.io.Reader]
+	at groovy.lang.MetaClassImpl.chooseMostSpecificParams(MetaClassImpl.java:3268)
+	at groovy.lang.MetaClassImpl.chooseMethodInternal(MetaClassImpl.java:3221)
+	at groovy.lang.MetaClassImpl.chooseMethod(MetaClassImpl.java:3164)
+	at groovy.lang.MetaClassImpl.getMethodWithCachingInternal(MetaClassImpl.java:1336)
+	at groovy.lang.MetaClassImpl.createPojoCallSite(MetaClassImpl.java:3396)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.createPojoSite(CallSiteArray.java:132)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.createCallSite(CallSiteArray.java:166)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at java_util_Properties$load.call(Unknown Source)
+	at com.resetoter.smartqq.manager.ConfigManager.loadConfig(ConfigManager.groovy:22)
+	at com.resetoter.smartqq.manager.ConfigManager.getConfig(ConfigManager.groovy:33)
+	at com.resetoter.smartqq.manager.ConfigManager$getConfig$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at com.resetoter.battleqq.logic.MagicBattle.<init>(MagicBattle.groovy:28)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:271)
+	at com.resetoter.battleqq.facade.CommandFacade.MagicBattle(CommandFacade.groovy:67)
+	... 86 more
+[DEBUG] [Thread-1] 05-18 23:38:55,781 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:38:56,649 [MessageCallbackFacade] - onGroupMessage：国产机没牌面
+[DEBUG] [Thread-1] 05-18 23:38:56,869 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:39:06,872 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:39:16,995 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:39:26,487 [MessageCallbackFacade] - onGroupMessage：华为
+[DEBUG] [Thread-1] 05-18 23:39:26,801 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:39:30,290 [MessageCallbackFacade] - onGroupMessage：牌面王
+[DEBUG] [Thread-1] 05-18 23:39:30,568 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:39:33,774 [MessageCallbackFacade] - onGroupMessage：不买不爱国
+[DEBUG] [Thread-1] 05-18 23:39:34,086 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:39:36,291 [MessageCallbackFacade] - onGroupMessage：老干部用机
+[DEBUG] [Thread-1] 05-18 23:39:36,650 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:39:38,607 [MessageCallbackFacade] - onGroupMessage：你买不买
+[DEBUG] [Thread-1] 05-18 23:39:38,860 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:39:40,529 [MessageCallbackFacade] - onGroupMessage：李达康
+[DEBUG] [Thread-1] 05-18 23:39:40,763 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:39:50,764 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:40:00,863 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:40:04,468 [MessageCallbackFacade] - onGroupMessage：华为买的人还是有的
+[DEBUG] [Thread-1] 05-18 23:40:04,676 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:40:06,160 [MessageCallbackFacade] - onGroupMessage：P10
+[DEBUG] [Thread-1] 05-18 23:40:06,511 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:40:16,512 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:40:23,861 [MessageCallbackFacade] - onGroupMessage：自己弄倒糟
+[DEBUG] [Thread-1] 05-18 23:40:24,029 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:40:33,629 [MessageCallbackFacade] - onGroupMessage：本来p10满满好
+[DEBUG] [Thread-1] 05-18 23:40:33,874 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:40:43,875 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:40:53,986 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:41:04,096 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:41:14,198 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:41:24,348 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:41:34,473 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:41:44,580 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:41:45,624 [MessageCallbackFacade] - onGroupMessage：se不嫌小吗
+[DEBUG] [Thread-1] 05-18 23:41:45,839 [SmartQQClient] - 开始接收消息
+[INFO] [main] 05-18 23:41:53,712 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-18 23:41:53,719 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
+[DEBUG] [main] 05-18 23:41:54,166 [SmartQQClient] - 开始获取二维码
+[INFO] [main] 05-18 23:41:54,968 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
+[DEBUG] [main] 05-18 23:41:54,969 [SmartQQClient] - 等待扫描二维码
+[INFO] [main] 05-18 23:42:04,628 [SmartQQClient] - 正在登录，请稍后
+[DEBUG] [main] 05-18 23:42:04,629 [SmartQQClient] - 开始获取ptwebqq
+[DEBUG] [main] 05-18 23:42:05,831 [SmartQQClient] - 开始获取vfwebqq
+[DEBUG] [main] 05-18 23:42:06,170 [SmartQQClient] - 开始获取uin和psessionid
+[DEBUG] [main] 05-18 23:42:06,467 [SmartQQClient] - 开始获取好友状态
+[DEBUG] [main] 05-18 23:42:06,689 [SmartQQClient] - 开始获取登录用户信息
+[INFO] [main] 05-18 23:42:06,921 [SmartQQClient] - AI！，欢迎！
+[DEBUG] [Thread-1] 05-18 23:42:06,924 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:42:11,782 [SmartQQClient] - 开始获取好友列表
+[DEBUG] [Thread-1] 05-18 23:42:12,012 [SmartQQClient] - 开始获取群列表
+[DEBUG] [Thread-1] 05-18 23:42:12,255 [SmartQQClient] - 开始获取讨论组列表
+[INFO] [Thread-1] 05-18 23:42:12,430 [Receiver] - 映射完成
+[INFO] [Thread-1] 05-18 23:42:12,431 [MessageCallbackFacade] - onGroupMessage：我感觉我已经用不了小的了
+[DEBUG] [Thread-1] 05-18 23:42:12,441 [SmartQQClient] - 开始获取群资料
+[DEBUG] [Thread-1] 05-18 23:42:14,581 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:42:15,900 [MessageCallbackFacade] - onGroupMessage：眼睛痛
+[DEBUG] [Thread-1] 05-18 23:42:16,152 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:42:18,564 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@巧克力 
+[DEBUG] [Thread-1] 05-18 23:42:18,564 [SmartQQClient] - 开始获取群资料
+[DEBUG] [Thread-1] 05-18 23:42:19,221 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-18 23:42:19,526 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-18 23:42:19,820 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:42:29,837 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:42:39,928 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:42:49,020 [MessageCallbackFacade] - onGroupMessage：眼睛不知道能不能60岁前不瞎
+[DEBUG] [Thread-1] 05-18 23:42:49,376 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:42:53,807 [MessageCallbackFacade] - onGroupMessage：["face",85]
+[DEBUG] [Thread-1] 05-18 23:42:54,088 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:43:04,089 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:43:14,176 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:43:24,274 [SmartQQClient] - 开始接收消息
+[INFO] [main] 05-18 23:43:33,699 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-18 23:43:33,709 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
+[DEBUG] [main] 05-18 23:43:34,215 [SmartQQClient] - 开始获取二维码
+[INFO] [main] 05-18 23:43:35,083 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
+[DEBUG] [main] 05-18 23:43:35,084 [SmartQQClient] - 等待扫描二维码
+[INFO] [main] 05-18 23:43:42,252 [SmartQQClient] - 正在登录，请稍后
+[DEBUG] [main] 05-18 23:43:42,252 [SmartQQClient] - 开始获取ptwebqq
+[DEBUG] [main] 05-18 23:43:42,729 [SmartQQClient] - 开始获取vfwebqq
+[DEBUG] [main] 05-18 23:43:43,009 [SmartQQClient] - 开始获取uin和psessionid
+[DEBUG] [main] 05-18 23:43:43,265 [SmartQQClient] - 开始获取好友状态
+[DEBUG] [main] 05-18 23:43:43,470 [SmartQQClient] - 开始获取登录用户信息
+[INFO] [main] 05-18 23:43:43,691 [SmartQQClient] - AI！，欢迎！
+[DEBUG] [Thread-1] 05-18 23:43:43,695 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:43:45,997 [SmartQQClient] - 开始获取好友列表
+[DEBUG] [Thread-1] 05-18 23:43:46,241 [SmartQQClient] - 开始获取群列表
+[DEBUG] [Thread-1] 05-18 23:43:46,451 [SmartQQClient] - 开始获取讨论组列表
+[INFO] [Thread-1] 05-18 23:43:46,630 [Receiver] - 映射完成
+[INFO] [Thread-1] 05-18 23:43:46,630 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@巧克力 
+[DEBUG] [Thread-1] 05-18 23:43:46,641 [SmartQQClient] - 开始获取群资料
+[DEBUG] [Thread-1] 05-18 23:43:48,511 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-18 23:43:48,718 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-18 23:43:49,023 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:43:59,028 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:44:09,104 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:44:19,265 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:44:29,426 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:44:31,482 [MessageCallbackFacade] - onGroupMessage：高中同学
+[DEBUG] [Thread-1] 05-18 23:44:31,482 [SmartQQClient] - 开始获取群资料
+[DEBUG] [Thread-1] 05-18 23:44:32,271 [SmartQQClient] - 开始接收消息
+[INFO] [main] 05-18 23:44:41,291 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-18 23:44:41,299 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
+[DEBUG] [main] 05-18 23:44:41,789 [SmartQQClient] - 开始获取二维码
+[INFO] [main] 05-18 23:44:42,554 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
+[DEBUG] [main] 05-18 23:44:42,555 [SmartQQClient] - 等待扫描二维码
+[INFO] [main] 05-18 23:44:50,825 [SmartQQClient] - 正在登录，请稍后
+[DEBUG] [main] 05-18 23:44:50,825 [SmartQQClient] - 开始获取ptwebqq
+[DEBUG] [main] 05-18 23:44:51,183 [SmartQQClient] - 开始获取vfwebqq
+[DEBUG] [main] 05-18 23:44:51,617 [SmartQQClient] - 开始获取uin和psessionid
+[DEBUG] [main] 05-18 23:44:51,882 [SmartQQClient] - 开始获取好友状态
+[DEBUG] [main] 05-18 23:44:52,097 [SmartQQClient] - 开始获取登录用户信息
+[INFO] [main] 05-18 23:44:52,332 [SmartQQClient] - AI！，欢迎！
+[DEBUG] [Thread-1] 05-18 23:44:52,336 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:44:52,624 [SmartQQClient] - 开始获取好友列表
+[DEBUG] [Thread-1] 05-18 23:44:52,887 [SmartQQClient] - 开始获取群列表
+[DEBUG] [Thread-1] 05-18 23:44:53,095 [SmartQQClient] - 开始获取讨论组列表
+[INFO] [Thread-1] 05-18 23:44:53,285 [Receiver] - 映射完成
+[INFO] [Thread-1] 05-18 23:44:53,286 [MessageCallbackFacade] - onGroupMessage：酷
+[DEBUG] [Thread-1] 05-18 23:44:53,300 [SmartQQClient] - 开始获取群资料
+[DEBUG] [Thread-1] 05-18 23:44:55,190 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:44:55,388 [MessageCallbackFacade] - onGroupMessage：流批
+[DEBUG] [Thread-1] 05-18 23:44:55,678 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:44:55,867 [MessageCallbackFacade] - onGroupMessage：孙哥
+[DEBUG] [Thread-1] 05-18 23:44:56,176 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:44:56,527 [MessageCallbackFacade] - onGroupMessage：笑死
+[DEBUG] [Thread-1] 05-18 23:44:56,819 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:45:01,554 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@巧克力 
+[DEBUG] [Thread-1] 05-18 23:45:01,554 [SmartQQClient] - 开始获取群资料
+[DEBUG] [Thread-1] 05-18 23:45:02,062 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-18 23:45:02,289 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-18 23:45:06,939 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:45:09,501 [MessageCallbackFacade] - onGroupMessage：丁凯乐
+[DEBUG] [Thread-1] 05-18 23:45:09,823 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:45:19,829 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:45:21,108 [MessageCallbackFacade] - onGroupMessage：哈批星球
+[DEBUG] [Thread-1] 05-18 23:45:21,463 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:45:31,465 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:45:41,594 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:45:46,148 [MessageCallbackFacade] - onGroupMessage：笑死
+[DEBUG] [Thread-1] 05-18 23:45:46,365 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:45:56,367 [SmartQQClient] - 开始接收消息
+[INFO] [main] 05-18 23:46:10,481 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-18 23:46:10,490 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
+[DEBUG] [main] 05-18 23:46:10,955 [SmartQQClient] - 开始获取二维码
+[INFO] [main] 05-18 23:46:11,804 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
+[DEBUG] [main] 05-18 23:46:11,805 [SmartQQClient] - 等待扫描二维码
+[INFO] [main] 05-18 23:46:19,092 [SmartQQClient] - 正在登录，请稍后
+[DEBUG] [main] 05-18 23:46:19,092 [SmartQQClient] - 开始获取ptwebqq
+[DEBUG] [main] 05-18 23:46:19,724 [SmartQQClient] - 开始获取vfwebqq
+[DEBUG] [main] 05-18 23:46:20,113 [SmartQQClient] - 开始获取uin和psessionid
+[DEBUG] [main] 05-18 23:46:20,400 [SmartQQClient] - 开始获取好友状态
+[DEBUG] [main] 05-18 23:46:20,654 [SmartQQClient] - 开始获取登录用户信息
+[INFO] [main] 05-18 23:46:20,895 [SmartQQClient] - AI！，欢迎！
+[DEBUG] [Thread-1] 05-18 23:46:20,899 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:46:26,116 [SmartQQClient] - 开始获取好友列表
+[DEBUG] [Thread-1] 05-18 23:46:26,363 [SmartQQClient] - 开始获取群列表
+[DEBUG] [Thread-1] 05-18 23:46:26,587 [SmartQQClient] - 开始获取讨论组列表
+[INFO] [Thread-1] 05-18 23:46:26,757 [Receiver] - 映射完成
+[INFO] [Thread-1] 05-18 23:46:26,758 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@巧克力 
+[DEBUG] [Thread-1] 05-18 23:46:26,767 [SmartQQClient] - 开始获取群资料
+[DEBUG] [Thread-1] 05-18 23:46:28,628 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-18 23:46:28,875 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-18 23:46:29,172 [SmartQQClient] - 开始接收消息
+[DEBUG] [pool-1-thread-1] 05-18 23:46:30,936 [SmartQQClient] - 开始发送群消息
+[DEBUG] [pool-1-thread-1] 05-18 23:46:31,325 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-18 23:46:39,177 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:46:49,181 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:46:59,241 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:47:09,412 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:47:19,610 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:47:29,674 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:47:39,786 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:47:49,944 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:48:00,099 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:48:06,162 [MessageCallbackFacade] - onGroupMessage：原来这个人在抽烟
+[DEBUG] [Thread-1] 05-18 23:48:06,162 [SmartQQClient] - 开始获取群资料
+[DEBUG] [Thread-1] 05-18 23:48:06,801 [SmartQQClient] - 开始接收消息
+[INFO] [main] 05-18 23:48:16,964 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-18 23:48:16,973 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
+[DEBUG] [main] 05-18 23:48:17,441 [SmartQQClient] - 开始获取二维码
+[INFO] [main] 05-18 23:48:18,120 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
+[DEBUG] [main] 05-18 23:48:18,120 [SmartQQClient] - 等待扫描二维码
+[INFO] [main] 05-18 23:48:26,684 [SmartQQClient] - 正在登录，请稍后
+[DEBUG] [main] 05-18 23:48:26,684 [SmartQQClient] - 开始获取ptwebqq
+[DEBUG] [main] 05-18 23:48:27,489 [SmartQQClient] - 开始获取vfwebqq
+[DEBUG] [main] 05-18 23:48:27,826 [SmartQQClient] - 开始获取uin和psessionid
+[DEBUG] [main] 05-18 23:48:28,195 [SmartQQClient] - 开始获取好友状态
+[DEBUG] [main] 05-18 23:48:28,433 [SmartQQClient] - 开始获取登录用户信息
+[INFO] [main] 05-18 23:48:28,670 [SmartQQClient] - AI！，欢迎！
+[DEBUG] [Thread-1] 05-18 23:48:28,673 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:48:31,047 [SmartQQClient] - 开始获取好友列表
+[DEBUG] [Thread-1] 05-18 23:48:31,296 [SmartQQClient] - 开始获取群列表
+[DEBUG] [Thread-1] 05-18 23:48:31,536 [SmartQQClient] - 开始获取讨论组列表
+[INFO] [Thread-1] 05-18 23:48:31,761 [Receiver] - 映射完成
+[INFO] [Thread-1] 05-18 23:48:31,761 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@巧克力 
+[DEBUG] [Thread-1] 05-18 23:48:31,772 [SmartQQClient] - 开始获取群资料
+[DEBUG] [Thread-1] 05-18 23:48:34,652 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-18 23:48:35,164 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-18 23:48:38,124 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:48:48,130 [SmartQQClient] - 开始接收消息
+[DEBUG] [pool-1-thread-1] 05-18 23:48:49,616 [SmartQQClient] - 开始发送群消息
+[DEBUG] [pool-1-thread-1] 05-18 23:48:50,013 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-18 23:48:58,278 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:49:08,283 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:49:18,365 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:49:28,440 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:49:38,544 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:49:48,633 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:49:58,784 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:50:08,929 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:50:19,072 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:50:29,186 [SmartQQClient] - 开始接收消息
+[INFO] [main] 05-18 23:50:49,349 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-18 23:50:49,355 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
+[DEBUG] [main] 05-18 23:50:49,807 [SmartQQClient] - 开始获取二维码
+[INFO] [main] 05-18 23:50:50,699 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
+[DEBUG] [main] 05-18 23:50:50,699 [SmartQQClient] - 等待扫描二维码
+[INFO] [main] 05-18 23:51:00,131 [SmartQQClient] - 正在登录，请稍后
+[DEBUG] [main] 05-18 23:51:00,131 [SmartQQClient] - 开始获取ptwebqq
+[DEBUG] [main] 05-18 23:51:00,570 [SmartQQClient] - 开始获取vfwebqq
+[DEBUG] [main] 05-18 23:51:00,851 [SmartQQClient] - 开始获取uin和psessionid
+[DEBUG] [main] 05-18 23:51:01,113 [SmartQQClient] - 开始获取好友状态
+[DEBUG] [main] 05-18 23:51:01,355 [SmartQQClient] - 开始获取登录用户信息
+[INFO] [main] 05-18 23:51:01,573 [SmartQQClient] - AI！，欢迎！
+[DEBUG] [Thread-1] 05-18 23:51:01,577 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:51:03,996 [SmartQQClient] - 开始获取好友列表
+[DEBUG] [Thread-1] 05-18 23:51:04,239 [SmartQQClient] - 开始获取群列表
+[DEBUG] [Thread-1] 05-18 23:51:04,480 [SmartQQClient] - 开始获取讨论组列表
+[INFO] [Thread-1] 05-18 23:51:04,672 [Receiver] - 映射完成
+[INFO] [Thread-1] 05-18 23:51:04,672 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@巧克力 
+[DEBUG] [Thread-1] 05-18 23:51:04,683 [SmartQQClient] - 开始获取群资料
+[DEBUG] [Thread-1] 05-18 23:51:07,036 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-18 23:51:07,770 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-18 23:51:08,015 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:51:18,020 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:51:27,570 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@巧克力 
+[DEBUG] [Thread-1] 05-18 23:51:27,922 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-18 23:51:28,188 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-18 23:51:28,560 [SmartQQClient] - 开始接收消息
+[DEBUG] [pool-1-thread-1] 05-18 23:51:31,211 [SmartQQClient] - 开始发送群消息
+[DEBUG] [pool-1-thread-1] 05-18 23:51:31,525 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-18 23:51:38,562 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:51:48,565 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:51:58,627 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:52:08,749 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:52:18,844 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:52:28,905 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:52:38,974 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:52:49,135 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:52:50,754 [MessageCallbackFacade] - onGroupMessage：http://www.bilibili.com/video/av10608888/
+[DEBUG] [Thread-1] 05-18 23:52:50,754 [SmartQQClient] - 开始获取群资料
+[DEBUG] [Thread-1] 05-18 23:52:51,459 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-18 23:52:51,682 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-18 23:52:51,682 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:52:51,849 [MessageCallbackFacade] - onGroupMessage：游戏从1962 ~ 2017年的变化 UP主：A35JM
+[DEBUG] [Thread-1] 05-18 23:52:52,180 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:53:02,182 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:53:12,253 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:53:22,310 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:53:32,369 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:53:42,508 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:53:52,591 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:54:02,667 [SmartQQClient] - 开始接收消息
+[ERROR] [Thread-1] 05-18 23:54:12,670 [SmartQQClient] - net.dongliu.requests.exception.RequestException: org.apache.http.conn.ConnectTimeoutException: Connect to d1.web2.qq.com:80 [d1.web2.qq.com/182.254.88.155] failed: connect timed out
+[DEBUG] [Thread-1] 05-18 23:54:12,671 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:54:22,738 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:54:32,793 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:54:42,949 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:54:53,079 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:55:03,220 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:55:13,381 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:55:23,472 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:55:33,540 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:55:43,636 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:55:53,710 [SmartQQClient] - 开始接收消息
+[INFO] [main] 05-18 23:57:16,850 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-18 23:57:16,859 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
+[DEBUG] [main] 05-18 23:57:17,322 [SmartQQClient] - 开始获取二维码
+[INFO] [main] 05-18 23:57:18,030 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
+[DEBUG] [main] 05-18 23:57:18,030 [SmartQQClient] - 等待扫描二维码
+[INFO] [main] 05-18 23:57:27,624 [SmartQQClient] - 正在登录，请稍后
+[DEBUG] [main] 05-18 23:57:27,624 [SmartQQClient] - 开始获取ptwebqq
+[DEBUG] [main] 05-18 23:57:28,302 [SmartQQClient] - 开始获取vfwebqq
+[DEBUG] [main] 05-18 23:57:28,714 [SmartQQClient] - 开始获取uin和psessionid
+[DEBUG] [main] 05-18 23:57:29,051 [SmartQQClient] - 开始获取好友状态
+[DEBUG] [main] 05-18 23:57:29,271 [SmartQQClient] - 开始获取登录用户信息
+[INFO] [main] 05-18 23:57:29,474 [SmartQQClient] - AI！，欢迎！
+[DEBUG] [Thread-1] 05-18 23:57:29,478 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:57:39,485 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:57:40,828 [SmartQQClient] - 开始获取好友列表
+[DEBUG] [Thread-1] 05-18 23:57:41,182 [SmartQQClient] - 开始获取群列表
+[DEBUG] [Thread-1] 05-18 23:57:41,419 [SmartQQClient] - 开始获取讨论组列表
+[INFO] [Thread-1] 05-18 23:57:41,660 [Receiver] - 映射完成
+[INFO] [Thread-1] 05-18 23:57:41,660 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@巧克力 
+[DEBUG] [Thread-1] 05-18 23:57:41,671 [SmartQQClient] - 开始获取群资料
+[DEBUG] [Thread-1] 05-18 23:57:44,048 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-18 23:57:44,333 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-18 23:57:44,652 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:57:54,653 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:57:59,506 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@巧克力 
+[DEBUG] [Thread-1] 05-18 23:57:59,779 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-18 23:57:59,983 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-18 23:58:00,267 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:58:10,269 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:58:20,365 [SmartQQClient] - 开始接收消息
+[INFO] [Thread-1] 05-18 23:58:27,141 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@巧克力 
+[DEBUG] [Thread-1] 05-18 23:58:27,141 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-18 23:58:27,378 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-18 23:58:27,736 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:58:37,738 [SmartQQClient] - 开始接收消息
+[INFO] [main] 05-18 23:58:48,177 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-18 23:58:48,186 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
+[DEBUG] [main] 05-18 23:58:48,651 [SmartQQClient] - 开始获取二维码
+[INFO] [main] 05-18 23:58:49,506 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
+[DEBUG] [main] 05-18 23:58:49,507 [SmartQQClient] - 等待扫描二维码
+[INFO] [main] 05-18 23:58:55,424 [SmartQQClient] - 正在登录，请稍后
+[DEBUG] [main] 05-18 23:58:55,424 [SmartQQClient] - 开始获取ptwebqq
+[DEBUG] [main] 05-18 23:58:56,099 [SmartQQClient] - 开始获取vfwebqq
+[DEBUG] [main] 05-18 23:58:56,477 [SmartQQClient] - 开始获取uin和psessionid
+[DEBUG] [main] 05-18 23:58:56,777 [SmartQQClient] - 开始获取好友状态
+[DEBUG] [main] 05-18 23:58:57,079 [SmartQQClient] - 开始获取登录用户信息
+[INFO] [main] 05-18 23:58:57,316 [SmartQQClient] - AI！，欢迎！
+[DEBUG] [Thread-1] 05-18 23:58:57,321 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:59:00,962 [SmartQQClient] - 开始获取好友列表
+[DEBUG] [Thread-1] 05-18 23:59:01,329 [SmartQQClient] - 开始获取群列表
+[DEBUG] [Thread-1] 05-18 23:59:01,601 [SmartQQClient] - 开始获取讨论组列表
+[INFO] [Thread-1] 05-18 23:59:01,786 [Receiver] - 映射完成
+[INFO] [Thread-1] 05-18 23:59:01,787 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@巧克力 
+[DEBUG] [Thread-1] 05-18 23:59:01,796 [SmartQQClient] - 开始获取群资料
+[DEBUG] [Thread-1] 05-18 23:59:03,569 [SmartQQClient] - 开始发送群消息
+[DEBUG] [Thread-1] 05-18 23:59:03,779 [SmartQQClient] - 发送成功
+[DEBUG] [Thread-1] 05-18 23:59:12,106 [SmartQQClient] - 开始接收消息
+[DEBUG] [Thread-1] 05-18 23:59:24,376 [SmartQQClient] - 开始接收消息
+[INFO] [main] 05-18 23:59:54,547 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-18 23:59:54,552 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
+[DEBUG] [main] 05-18 23:59:54,982 [SmartQQClient] - 开始获取二维码
+[INFO] [main] 05-18 23:59:55,880 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
+[DEBUG] [main] 05-18 23:59:55,880 [SmartQQClient] - 等待扫描二维码
