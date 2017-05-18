@@ -150,7 +150,7 @@ class PlayerBattle {
                     "@$enemyName 你死了 @$nickName 是胜利者！胜利者获得500点积分，并且回复生命值！")
             p1.point += 500
             p1.hp = PlayerEx.getMaxHp()
-            p1.lastkiller = enemyName
+            p2.lastkiller = nickName
             return true
         }
         return false
@@ -170,7 +170,7 @@ class PlayerBattle {
                     "@$nickName 你死了 @$enemyName 是胜利者！胜利者获得500点积分，并且回复生命值！")
             p2.point += 500
             p2.hp = PlayerEx.getMaxHp()
-            p2.lastkiller = nickName
+            p1.lastkiller = enemyName
             return true
         }
         return false

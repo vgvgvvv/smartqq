@@ -138,3 +138,7 @@ java.lang.NullPointerException: Cannot get property 'working' on null object
 [ERROR] [Thread-1] 05-19 00:09:51,660 [SmartQQClient] - net.dongliu.requests.exception.RequestException: java.net.NoRouteToHostException: No route to host: connect
 [ERROR] [Thread-1] 05-19 00:10:11,810 [SmartQQClient] - net.dongliu.requests.exception.RequestException: org.apache.http.conn.ConnectTimeoutException: Connect to d1.web2.qq.com:80 [d1.web2.qq.com/101.226.211.174] failed: connect timed out
 [ERROR] [Thread-1] 05-19 00:16:43,432 [SmartQQClient] - net.dongliu.requests.exception.RequestException: org.apache.http.conn.ConnectTimeoutException: Connect to d1.web2.qq.com:80 [d1.web2.qq.com/182.254.88.155] failed: connect timed out
+[ERROR] [pool-1-thread-1] 05-19 00:27:06,329 [SmartQQClient] - 发送失败，Api返回码[1202]
+[ERROR] [Thread-1] 05-19 00:32:54,837 [SmartQQClient] - net.dongliu.requests.exception.RequestException: org.apache.http.conn.ConnectTimeoutException: Connect to d1.web2.qq.com:80 [d1.web2.qq.com/182.254.88.155] failed: connect timed out
+[ERROR] [pool-1-thread-2] 05-19 00:37:10,080 [SmartQQClient] - 发送失败，Api返回码[1202]
+[ERROR] [pool-1-thread-2] 05-19 00:37:11,632 [SmartQQClient] - 发送失败，Api返回码[1202]

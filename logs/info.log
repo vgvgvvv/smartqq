@@ -220,3 +220,54 @@ java.lang.NullPointerException: Cannot get property 'working' on null object
 [INFO] [Thread-1] 05-19 00:21:38,969 [Receiver] - 映射完成
 [INFO] [Thread-1] 05-19 00:21:38,970 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@巧克力 
 [INFO] [Thread-1] 05-19 00:21:50,362 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@巧克力 
+[INFO] [main] 05-19 00:26:05,545 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-19 00:26:05,556 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
+[INFO] [main] 05-19 00:26:22,659 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-19 00:26:22,667 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
+[INFO] [main] 05-19 00:26:23,953 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
+[INFO] [main] 05-19 00:26:34,370 [SmartQQClient] - 正在登录，请稍后
+[INFO] [main] 05-19 00:26:35,957 [SmartQQClient] - AI！，欢迎！
+[INFO] [Thread-1] 05-19 00:26:59,859 [Receiver] - 映射完成
+[INFO] [Thread-1] 05-19 00:26:59,860 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@巧克力 
+[ERROR] [pool-1-thread-1] 05-19 00:27:06,329 [SmartQQClient] - 发送失败，Api返回码[1202]
+[INFO] [main] 05-19 00:31:35,840 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-19 00:31:35,849 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
+[INFO] [main] 05-19 00:31:37,407 [SmartQQClient] - 二维码已保存在 D:\Document\Other\smartqq\qrcode.png 文件中，请打开手机QQ并扫描二维码
+[INFO] [main] 05-19 00:31:42,368 [SmartQQClient] - 正在登录，请稍后
+[INFO] [main] 05-19 00:31:44,319 [SmartQQClient] - AI！，欢迎！
+[INFO] [Thread-1] 05-19 00:31:52,415 [Receiver] - 映射完成
+[INFO] [Thread-1] 05-19 00:31:52,416 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@巧克力 
+[INFO] [Thread-1] 05-19 00:32:21,874 [MessageCallbackFacade] - onGroupMessage：我刚刚怎么死的啊
+[INFO] [Thread-1] 05-19 00:32:27,389 [MessageCallbackFacade] - onGroupMessage：我刚刚怎么死的啊？
+[INFO] [Thread-1] 05-19 00:32:42,413 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@牛 
+[ERROR] [Thread-1] 05-19 00:32:54,837 [SmartQQClient] - net.dongliu.requests.exception.RequestException: org.apache.http.conn.ConnectTimeoutException: Connect to d1.web2.qq.com:80 [d1.web2.qq.com/182.254.88.155] failed: connect timed out
+[INFO] [Thread-1] 05-19 00:32:55,055 [MessageCallbackFacade] - onGroupMessage：。
+[INFO] [Thread-1] 05-19 00:33:00,848 [MessageCallbackFacade] - onGroupMessage：你跟命大有什么大仇
+[INFO] [Thread-1] 05-19 00:33:13,738 [MessageCallbackFacade] - onGroupMessage：晚上命大一般步子啊
+[INFO] [Thread-1] 05-19 00:33:15,017 [MessageCallbackFacade] - onGroupMessage：不在
+[INFO] [Thread-1] 05-19 00:33:18,037 [MessageCallbackFacade] - onGroupMessage：["face",118]
+[INFO] [Thread-1] 05-19 00:33:23,027 [MessageCallbackFacade] - onGroupMessage：笑死
+[INFO] [Thread-1] 05-19 00:33:42,020 [MessageCallbackFacade] - onGroupMessage：这回肯定平衡了
+[INFO] [Thread-1] 05-19 00:33:51,859 [MessageCallbackFacade] - onGroupMessage：虽然只有俩技能 一个火冲一个仙腿
+[INFO] [Thread-1] 05-19 00:34:11,056 [MessageCallbackFacade] - onGroupMessage：后面可以慢慢加奇奇怪怪的技能
+[INFO] [Thread-1] 05-19 00:34:16,344 [MessageCallbackFacade] - onGroupMessage：["face",124]
+[INFO] [Thread-1] 05-19 00:35:57,590 [MessageCallbackFacade] - onGroupMessage：吃屎吧 @猿 
+[INFO] [Thread-1] 05-19 00:36:10,216 [MessageCallbackFacade] - onGroupMessage：炸裂吧！ @猿 
+[INFO] [Thread-1] 05-19 00:36:13,743 [MessageCallbackFacade] - onGroupMessage：干死 @鸾 
+[INFO] [Thread-1] 05-19 00:36:31,659 [MessageCallbackFacade] - onGroupMessage：爱酱
+[INFO] [Thread-1] 05-19 00:36:44,714 [MessageCallbackFacade] - onGroupMessage：查看状态
+[INFO] [Thread-1] 05-19 00:36:59,059 [Receiver] - 映射完成
+[INFO] [Thread-1] 05-19 00:36:59,059 [MessageCallbackFacade] - onGroupMessage：干死 @猿 
+[INFO] [Thread-1] 05-19 00:37:08,063 [MessageCallbackFacade] - onGroupMessage：炸裂吧！@鸾 
+[ERROR] [pool-1-thread-2] 05-19 00:37:10,080 [SmartQQClient] - 发送失败，Api返回码[1202]
+[ERROR] [pool-1-thread-2] 05-19 00:37:11,632 [SmartQQClient] - 发送失败，Api返回码[1202]
+[INFO] [Thread-1] 05-19 00:37:25,339 [MessageCallbackFacade] - onGroupMessage：？
+[INFO] [Thread-1] 05-19 00:37:29,706 [MessageCallbackFacade] - onGroupMessage：119？
+[INFO] [Thread-1] 05-19 00:37:36,930 [MessageCallbackFacade] - onGroupMessage：随机你妈嗨
+[INFO] [Thread-1] 05-19 00:37:41,636 [MessageCallbackFacade] - onGroupMessage：笑死
+[INFO] [main] 05-19 00:39:37,063 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-19 00:39:37,071 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
+[INFO] [main] 05-19 00:39:54,105 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-19 00:39:54,114 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
+[INFO] [main] 05-19 00:40:23,977 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.turning.TurningCallback
+[INFO] [main] 05-19 00:40:23,984 [MessageCallbackFacade] - 初始化回调器:com.resetoter.smartqq.callback.battle.BattleCallback
